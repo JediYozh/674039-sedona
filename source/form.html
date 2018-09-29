@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Форма Отзыва</title>
+</head>
+
+<body>
+  <header class="header">
+    <nav class="main-nav">
+      <ul class="main-nav__list menu-list">
+        <li class="menu-list__item">
+          <a>Главная</a>
+          <button class="menu-list__toggle-button" type="button">Закрыть меню</button>
+        </li>
+      </ul>
+      <ul class="main-nav__list menu-list">
+        <li class="menu-list__item">
+          <a href="photo.html">Фото и видео</a>
+        </li>
+      </ul>
+      <ul class="main-nav__list menu-list">
+        <li class="menu-list__item">
+          <a href="form.html">Формы отзыва</a>
+        </li>
+      </ul>
+      <ul class="main-nav__list menu-list">
+        <li class="menu-list__item">
+          <a href="#">HTML Academy</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="header__wrapper">
+      <a class="header__logo">
+        <img class="header__logo-image" src="http://placehold.it/102x30" width="102" height="30" alt="City of Sedona">
+      </a>
+      <button class="header__toggle-button" type="button">Открыть меню</button>
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="main__banner">
+      <h1 class="main__title">Sedona</h1>
+    </div>
+
+    <div class="review">
+      <div class="review__card card">
+        <p class="card_title primary-text">Оставтье свой отзыв</p>
+        <p class="card_text secondary-text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о
+          посещенных вами достопримечательностях</p>
+      </div>
+    </div>
+
+    <section class="page-form">
+      <h2 class="visually-hidden">Форма отзыва</h2>
+      <form class="form" action="https://echo.htmlacademy.ru" method="post">
+        <div class="form__item">
+          <p class="page-form__primary-text">Представтесь</p>
+          <div class="form__group">
+            <label class="form__label" for="firstname">Имя*:</label>
+            <input class="form__field" type="text" name="firstname" id="firstname">
+          </div>
+          <div class="form__group">
+            <label class="form__label" for="lastname">Фамилия*:</label>
+            <input class="form__field" type="text" name="lastname" id="lastname">
+          </div>
+          <div class="form__group">
+            <label class="form__label" for="patronymic">Отчество:</label>
+            <input class="form__field" type="text" name="patronymic" id="patronymic">
+          </div>
+          <hr class="divider">
+        </div>
+        <div class="form__item">
+          <p class="form__item-title primary-text">Контактная информация</p>
+          <div class="form-group">
+            <label class="form__field" for="phone">Контактный телефон*:</label>
+            <div class="form__group-fields">
+              <input class="form__field form__field--contact" type="tel" name="phone" id="phone" placeholder="Введите телефон">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="form__field" for="email">Электронная почта*:</label>
+            <div class="form__group-fields">
+              <input class="form__field form__field--contact" type="email" name="email" id="email" placeholder="Введите e-mail">
+            </div>
+          </div>
+        </div>
+        <hr class="divider">
+        <div class="form__item">
+          <p class="form__item-title primary-text">Ваше общее впечатление</p>
+          <div class="form-group">
+            <input class="form__field form__field--feedback" type="radio" name="positive" id="positive">
+            <label class="form__label form__label--feedback" for="positive">Скорее положительное</label>
+          </div>
+          <div class="form-group">
+            <input class="form__field form__field--feedback" type="radio" name="negative" id="negative">
+            <label class="form__label form__label--feedback" for="negative">Скорее отрицательное</label>
+          </div>
+          <div class="form-group">
+            <input class="form__field form__field--feedback" type="radio" name="neutral" id="neutral">
+            <label class="form__label form__label--feedback" for="neutral">Затрудняюсь ответить</label>
+          </div>
+        </div>
+        <hr class="divider">
+        <div class="form__item">
+          <p class="form__item-title primary-text">Посещенные достопримечательности</p>
+          <div class="form-group">
+            <input class="form__field form__field--visited-places" type="checkbox" name="bridge" id="bridge" checked>
+            <label class="form__label form__label--visited-places" for="bridge">Мост Дьявола</label>
+          </div>
+          <div class="form-group">
+            <input class="form__field form__field--visited-places" type="checkbox" name="mountain" id="mountain"
+              checked>
+            <label class="form__label form__label--visited-places" for="mountain">Гора-Колокол</label>
+          </div>
+          <div class="form-group">
+            <input class="form__field form__field--visited-places" type="checkbox" name="park" id="park" checked>
+            <label class="form__label form__label--visited-places" for="park">Слайд-парк</label>
+          </div>
+          <div class="form-group">
+            <input class="form__field form__field--visited-places" type="checkbox" name="rock" id="rock">
+            <label class="form__label form__label--visited-places" for="rock">Красные скалы</label>
+          </div>
+        </div>
+        <hr class="divider">
+        <div class="form_item">
+          <p class="form__item-title primary-text">Ваще общее впечатление</p>
+          <div class="form-group">
+            <textarea class="form__field form__field--about-area" name="about" id="about" rows="3" cols="3"></textarea>
+          </div>
+        </div>
+        <button class="form__button button" type="submit">Отправить отзыв</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p class="footer__hash primary-text">#VisitSedona</p>
+    <div class="footer social">
+      <ul class="social__list">
+        <li class="social__item">
+          <a class="social__link social__link--vkontakte" href="">Вконтакте</a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--facebook" href="">Facebook</a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--youtube" href="">YouTube</a>
+        </li>
+      </ul>
+    </div>
+    <div class="footer__developer">
+      <p class="footer_text secondary-text">Разработано</p>
+      <img class="footer__developer-icon" src="http://placehold.it/27x34" width="27" height="34" alt="HTML Academy">
+    </div>
+  </footer>
+</body>
+
+</html>
