@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
 </head>
 
@@ -10,25 +11,25 @@
 
   <header class="header">
     <nav class="main-nav">
+      <button class="menu-list__toggle-button" type="button">Закрыть меню</button>
       <ul class="main-nav__list menu-list">
         <li class="menu-list__item">
-          <a>Главная</a>
-          <button class="menu-list__toggle-button" type="button">Закрыть меню</button>
+          <a class="menu-list__link">Главная</a>
         </li>
       </ul>
       <ul class="main-nav__list menu-list">
         <li class="menu-list__item">
-          <a href="photo.html">Фото и видео</a>
+          <a class="menu-list__link" href="photo.html">Фото и видео</a>
         </li>
       </ul>
       <ul class="main-nav__list menu-list">
         <li class="menu-list__item">
-          <a href="form.html">Формы отзыва</a>
+          <a class="menu-list__link" href="form.html">Форма отзыва</a>
         </li>
       </ul>
       <ul class="main-nav__list menu-list">
         <li class="menu-list__item">
-          <a href="#">HTML Academy</a>
+          <a class="menu-list__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
         </li>
       </ul>
     </nav>
@@ -42,118 +43,115 @@
 
   <main class="main">
     <section class="welcome">
-      <h2 class="visually-hidden">Добро пожаловать в Седону</h2>
-      <img class="welcome-banner" src="http://placehold.it/281x214" width="281" height="214" alt="Because the Grand
+      <h1 class="visually-hidden">Добро пожаловать в Седону</h1>
+      <img class="welcome__banner" src="http://placehold.it/281x214" width="281" height="214" alt="Because the Grand
       Canyon sucks">
     </section>
 
     <section class="definition">
-      <h2 class="visually-hidden">Седона заслуживает большего</h2>
-      <div class="definition_card card">
-        <p class="card_title primary-text">Седона - небольшой городок в Аризоне, заслуживающий большего</p>
-        <p class="card_text secondary-text">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+      <div class="definition__card card">
+        <h2 class="card__title">Седона - небольшой городок в Аризоне, заслуживающий большего!</h2>
+        <p class="card__text">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
       </div>
     </section>
 
     <section class="advantages">
       <h2 class="visually-hidden">Почему стоит посетить Седону</h2>
-      <div class="advantages-item">
-        <div class="advantages-item__card card card--blue">
-          <p class="card_title primary-text">Настоящий городок</p>
-          <p class="card_text secondary-text">- №1 -</p>
-          <p class="card_text secondary-text">Седона не аттракцион для туристов, там течет своя жизнь</p>
-        </div>
-        <img class="advantages-item__photo" src="http://placehold.it/320x260" width="320" height="260" alt="House in Sedona" />
-        <div class="advantages-item__recommendations recommendations">
-          <div class="recommendation__list">
-            <div class="recommendations__item">
-              <span class="recommendations__icon">
-                <img src="http://placehold.it/36x37" alt="House">
-              </span>
-              <p class="recommendations__title">Жилье</p>
-              <p class="recommendations__text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
-            </div>
-            <div class="recommendations__item">
-              <span class="recommendations__icon">
-                <img src="http://placehold.it/36x37" alt="Souvenirs">
-              </span>
-              <p class="recommendations__title">Сувениры</p>
-              <p class="recommendations__text">Не только китайского, но и местного производства!/p>
-            </div>
-            <div class="recommendations__item">
-              <span class="recommendations__icon">
-                <img src="http://placehold.it/36x37" alt="Food">
-              </span>
-              <p class="recommendations__title">Еда</p>
-              <p class="recommendations__text">Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!</p>
-            </div>
+      <ul class="advantages__list">
+        <li class="advantages__item">
+          <div class="advantages__card card card--inverted">
+            <p class="card__title">Настоящий городок</p>
+            <p class="card__text">№1</p>
+            <p class="card__text">Седона не аттракцион для туристов, там течет своя жизнь</p>
           </div>
-        </div>
-      </div>
-
-      <div class="advantages-item">
-        <div class="advantages-item__card card card--blue">
-          <p class="card_title primary-text">Там есть мост дьявола</p>
-          <p class="card_text secondary-text">- №2 -</p>
-          <p class="card_text secondary-text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
-        </div>
-        <img class="advantages-item__photo" src="http://placehold.it/320x260" width="320" height="260" alt="Devil bridge" />
-      </div>
-
-      <div class="advantages-item">
-        <div class="advantages-item__card card card--grey">
-          <p class="card_title primary-text">Небольшая площадь</p>
-          <p class="card_text secondary-text">- №3 -</p>
-          <p class="card_text secondary-text">Все интересные места находятся очень близко</p>
-        </div>
-      </div>
-      <hr class="advantages__divider divider">
-      <div class="advantages-item">
-        <div class="advantages-item__card card card--grey">
-          <p class="card_title primary-text">Красивая дорога</p>
-          <p class="card_text secondary-text">- №4 -</p>
-          <p class="card_text secondary-text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-        </div>
-      </div>
-      <hr class="advantages__divider divider">
-      <div class="advantages-item">
-        <div class="advantages-item__card card card--grey">
-          <p class="card_title primary-text">Мало туристов</p>
-          <p class="card_text secondary-text">- №5 -</p>
-          <p class="card_text secondary-text">Большинство едет в Гранд Каньон и толпится там</p>
-        </div>
-      </div>
+          <div class="advantages__recommendations recommendations">
+            <ul class="recommendations__list">
+              <li class="recommendations__item">
+                <img class="advantages__photo" src="http://placehold.it/320x260" width="320" height="260" alt="House in Sedona" />
+                <div class="recommendations__icon">
+                  <img src="http://placehold.it/36x37" alt="House">
+                </div>
+                <h3 class="recommendations__title">Жилье</h3>
+                <p class="recommendations__text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+              </li>
+              <li class="recommendations__item">
+                <div class="recommendations__icon">
+                  <img src="http://placehold.it/36x37" alt="Souvenirs">
+                </div>
+                <h3 class="recommendations__title">Сувениры</h3>
+                <p class="recommendations__text">Не только китайского, но и местного производства!/p>
+              </li>
+              <li class="recommendations__item">
+                <div class="recommendations__icon">
+                  <img src="http://placehold.it/36x37" alt="Food">
+                </div>
+                <h3 class="recommendations__title">Еда</h3>
+                <p class="recommendations__text">Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!</p>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="advantages__item">
+          <div class="advantages__card card card--inverted">
+            <p class="card__title">Там есть мост дьявола</p>
+            <p class="card__text">№2</p>
+            <p class="card__text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+          </div>
+          <img class="advantages__photo" src="http://placehold.it/320x260" width="320" height="260" alt="Devil bridge" />
+        </li>
+        <li class="advantages__item">
+          <div class="advantages__card card card--secondary">
+            <p class="card__title">Небольшая площадь</p>
+            <p class="card__text">№3</p>
+            <p class="card__text">Все интересные места находятся очень близко</p>
+          </div>
+        </li>
+        <li class="advantages__item">
+          <div class="advantages__card card card--secondary">
+            <p class="card__title">Красивая дорога</p>
+            <p class="card__text">№4</p>
+            <p class="card__text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+          </div>
+        </li>
+        <li class="advantages__item">
+          <div class="advantages__card card card--secondary">
+            <p class="card__title">Мало туристов</p>
+            <p class="card__text">№5</p>
+            <p class="card__text">Большинство едет в Гранд Каньон и толпится там</p>
+          </div>
+        </li>
+      </ul>
     </section>
 
     <section class="hotel-search">
       <h2 class="visually-hidden">Поиск гостиницы</h2>
       <div class="hotel-search__card card">
-        <p class="card_title primary-text">Заинтересовались</p>
-        <p class="card_text secondary-text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения
-          гостиниц в седоне</p>
+        <p class="card__title">Заинтересовались?</p>
+        <p class="card__text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения
+          гостиниц в Седоне</p>
       </div>
-      <a class="hotel-search__link">Найти гостиницу</a>
-      <img class="hotel-seach__map" src="http://placehold.it/320x350" width="320" height="350" alt="Sedona on map">
+      <a class="hotel-search__link button" href="hotel-search.html">Найти гостиницу</a>
+      <img class="hotel-search__map" src="http://placehold.it/320x350" width="320" height="350" alt="Sedona on map">
     </section>
   </main>
 
   <footer class="footer">
-    <p class="footer__hash primary-text">#VisitSedona</p>
-    <div class="footer social">
+    <span class="footer__hash">#VisitSedona</span>
+    <div class="footer__links social">
       <ul class="social__list">
         <li class="social__item">
-          <a class="social__link social__link--vkontakte" href="">Вконтакте</a>
+          <a class="social__link social__link--vk" href="">Вконтакте</a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--facebook" href="">Facebook</a>
+          <a class="social__link social__link--fc" href="">Facebook</a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--youtube" href="">YouTube</a>
+          <a class="social__link social__link--yt" href="">YouTube</a>
         </li>
       </ul>
     </div>
     <div class="footer__developer">
-      <p class="footer_text secondary-text">Разработано</p>
+      <span class="footer__text">Разработано</span>
       <img class="footer__developer-icon" src="http://placehold.it/27x34" width="27" height="34" alt="HTML Academy">
     </div>
   </footer>

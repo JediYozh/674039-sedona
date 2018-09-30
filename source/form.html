@@ -3,31 +3,32 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Форма Отзыва</title>
 </head>
 
 <body>
   <header class="header">
     <nav class="main-nav">
+      <button class="menu-list__toggle-button" type="button">Закрыть меню</button>
       <ul class="main-nav__list menu-list">
         <li class="menu-list__item">
-          <a>Главная</a>
-          <button class="menu-list__toggle-button" type="button">Закрыть меню</button>
+          <a class="menu-list__link" href="index.html">Главная</a>
         </li>
       </ul>
       <ul class="main-nav__list menu-list">
         <li class="menu-list__item">
-          <a href="photo.html">Фото и видео</a>
+          <a class="menu-list__link" href="photo.html">Фото и видео</a>
         </li>
       </ul>
       <ul class="main-nav__list menu-list">
         <li class="menu-list__item">
-          <a href="form.html">Формы отзыва</a>
+          <a class="menu-list__link">Форма отзыва</a>
         </li>
       </ul>
       <ul class="main-nav__list menu-list">
         <li class="menu-list__item">
-          <a href="#">HTML Academy</a>
+          <a class="menu-list__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
         </li>
       </ul>
     </nav>
@@ -40,23 +41,24 @@
   </header>
 
   <main class="main">
-    <div class="main__banner">
-      <h1 class="main__title">Sedona</h1>
-    </div>
+    <section class="main__banner">
+      <h1 class="visually-hidden">Sedona</h1>
+      <img class="main__slogan-photo" src="http://placehold.it/230x40" width="230" height="40" alt="Sedona">
+    </section>
 
-    <div class="review">
+    <section class="review">
       <div class="review__card card">
-        <p class="card_title primary-text">Оставтье свой отзыв</p>
-        <p class="card_text secondary-text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о
+        <h2 class="card__title">Оставьте свой отзыв</h2>
+        <p class="card__text">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о
           посещенных вами достопримечательностях</p>
       </div>
-    </div>
+    </section>
 
     <section class="page-form">
       <h2 class="visually-hidden">Форма отзыва</h2>
-      <form class="form" action="https://echo.htmlacademy.ru" method="post">
+      <form class="page-form__review form" action="https://echo.htmlacademy.ru" method="post">
         <div class="form__item">
-          <p class="page-form__primary-text">Представтесь</p>
+          <h2 class="form__primary-text">Представьтесь:</h2>
           <div class="form__group">
             <label class="form__label" for="firstname">Имя*:</label>
             <input class="form__field" type="text" name="firstname" id="firstname">
@@ -69,65 +71,60 @@
             <label class="form__label" for="patronymic">Отчество:</label>
             <input class="form__field" type="text" name="patronymic" id="patronymic">
           </div>
-          <hr class="divider">
         </div>
         <div class="form__item">
-          <p class="form__item-title primary-text">Контактная информация</p>
-          <div class="form-group">
+          <h2 class="form__item-title">Контактная информация:</h2>
+          <div class="form__group">
             <label class="form__field" for="phone">Контактный телефон*:</label>
             <div class="form__group-fields">
               <input class="form__field form__field--contact" type="tel" name="phone" id="phone" placeholder="Введите телефон">
             </div>
           </div>
-          <div class="form-group">
+          <div class="form__group">
             <label class="form__field" for="email">Электронная почта*:</label>
             <div class="form__group-fields">
               <input class="form__field form__field--contact" type="email" name="email" id="email" placeholder="Введите e-mail">
             </div>
           </div>
         </div>
-        <hr class="divider">
         <div class="form__item">
-          <p class="form__item-title primary-text">Ваше общее впечатление</p>
-          <div class="form-group">
-            <input class="form__field form__field--feedback" type="radio" name="positive" id="positive">
-            <label class="form__label form__label--feedback" for="positive">Скорее положительное</label>
+          <h2 class="form__item-title">Ваше общее впечатление:</h2>
+          <div class="form__group">
+            <input class="form__field form__field--radio" type="radio" name="feedback" id="positive">
+            <label class="form__label form__label--radio" for="positive">Скорее положительное</label>
           </div>
-          <div class="form-group">
-            <input class="form__field form__field--feedback" type="radio" name="negative" id="negative">
-            <label class="form__label form__label--feedback" for="negative">Скорее отрицательное</label>
+          <div class="form__group">
+            <input class="form__field form__field--radio" type="radio" name="feedback" id="negative">
+            <label class="form__label form__label--radio" for="negative">Скорее отрицательное</label>
           </div>
-          <div class="form-group">
-            <input class="form__field form__field--feedback" type="radio" name="neutral" id="neutral">
-            <label class="form__label form__label--feedback" for="neutral">Затрудняюсь ответить</label>
+          <div class="form__group">
+            <input class="form__field form__field--radio" type="radio" name="feedback" id="neutral">
+            <label class="form__label form__label--radio" for="neutral">Затрудняюсь ответить</label>
           </div>
         </div>
-        <hr class="divider">
         <div class="form__item">
-          <p class="form__item-title primary-text">Посещенные достопримечательности</p>
-          <div class="form-group">
-            <input class="form__field form__field--visited-places" type="checkbox" name="bridge" id="bridge" checked>
-            <label class="form__label form__label--visited-places" for="bridge">Мост Дьявола</label>
+          <h2 class="form__item-title">Посещенные достопримечательности:</h2>
+          <div class="form__group">
+            <input class="form__field form__field--checkbox" type="checkbox" name="sight" id="bridge" checked>
+            <label class="form__label form__label--checkbox" for="bridge">Мост Дьявола</label>
           </div>
-          <div class="form-group">
-            <input class="form__field form__field--visited-places" type="checkbox" name="mountain" id="mountain"
-              checked>
-            <label class="form__label form__label--visited-places" for="mountain">Гора-Колокол</label>
+          <div class="form__group">
+            <input class="form__field form__field--checkbox" type="checkbox" name="sight" id="mountain" checked>
+            <label class="form__label form__label--checkbox" for="mountain">Гора-Колокол</label>
           </div>
-          <div class="form-group">
-            <input class="form__field form__field--visited-places" type="checkbox" name="park" id="park" checked>
-            <label class="form__label form__label--visited-places" for="park">Слайд-парк</label>
+          <div class="form__group">
+            <input class="form__field form__field--checkbox" type="checkbox" name="sight" id="park" checked>
+            <label class="form__label form__label--checkbox" for="park">Слайд-парк</label>
           </div>
-          <div class="form-group">
-            <input class="form__field form__field--visited-places" type="checkbox" name="rock" id="rock">
-            <label class="form__label form__label--visited-places" for="rock">Красные скалы</label>
+          <div class="form__group">
+            <input class="form__field form__field--checkbox" type="checkbox" name="sight" id="rock">
+            <label class="form__label form__label--checkbox" for="rock">Красные скалы</label>
           </div>
         </div>
-        <hr class="divider">
-        <div class="form_item">
-          <p class="form__item-title primary-text">Ваще общее впечатление</p>
-          <div class="form-group">
-            <textarea class="form__field form__field--about-area" name="about" id="about" rows="3" cols="3"></textarea>
+        <div class="form__item">
+          <h2 class="form__item-title">Опишите свои эмоции:</h2>
+          <div class="form__group">
+            <textarea class="form__field form__field--about-area" name="about" id="about" placeholder="Опишите подробно все свои восторги"></textarea>
           </div>
         </div>
         <button class="form__button button" type="submit">Отправить отзыв</button>
@@ -136,22 +133,22 @@
   </main>
 
   <footer class="footer">
-    <p class="footer__hash primary-text">#VisitSedona</p>
-    <div class="footer social">
+    <span class="footer__hash">#VisitSedona</span>
+    <div class="footer__links social">
       <ul class="social__list">
         <li class="social__item">
-          <a class="social__link social__link--vkontakte" href="">Вконтакте</a>
+          <a class="social__link social__link--vk" href="">Вконтакте</a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--facebook" href="">Facebook</a>
+          <a class="social__link social__link--fc" href="">Facebook</a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--youtube" href="">YouTube</a>
+          <a class="social__link social__link--yt" href="">YouTube</a>
         </li>
       </ul>
     </div>
     <div class="footer__developer">
-      <p class="footer_text secondary-text">Разработано</p>
+      <span class="footer__text">Разработано</span>
       <img class="footer__developer-icon" src="http://placehold.it/27x34" width="27" height="34" alt="HTML Academy">
     </div>
   </footer>
