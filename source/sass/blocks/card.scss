@@ -16,9 +16,25 @@
   font-weight: bold;
   line-height: 1.44;
   color: $color-title;
+  margin-bottom: 30px;
 
   &--inverted {
     color: #ffffff;
+  }
+
+  &--advantage {
+    margin-bottom: 14px;
+  }
+
+  &--hotel {
+    font-size: $font-size-big;
+    font-weight: bold;
+    line-height: 1.24;
+    margin-bottom: 24px;
+  }
+
+  &--video {
+    margin-bottom: 32px;
   }
 }
 
@@ -37,16 +53,22 @@
   &--definition {
     line-height: 1.86;
   }
+
+  &--large {
+    line-height: 1.71;
+  }
+
+  &--hotel {
+    margin-bottom: 30px;
+  }
 }
 
 .card__number {
   @include text-style;
-  color: #ffffff;
   font-size: $font-size-small;
   font-weight: normal;
   line-height: 1.5;
-  margin-top: 7px;
-  margin-bottom: 12px;
+  margin-bottom: 18px;
 
   &--inverted {
     color: #ffffff;
@@ -54,25 +76,26 @@
 
   &--secondary {
     color: $color-secondary-text;
+    margin-bottom: 18px;
   }
 }
 
-.card__wrapper {
-  &--photo {
-    width: 269px;
-    height: 112px;
-    margin: 44px 24px 33px 27px;
-  }
+// .card__wrapper {
+//   &--photo {
+//     width: 269px;
+//     height: 112px;
+//     margin: 44px 24px 33px 27px;
+//   }
 
-  &--before-video {
-    width: 236px;
-    height: 113px;
-    margin: 39px 113px 40px 43px;
-  }
+//   &--before-video {
+//     width: 236px;
+//     height: 113px;
+//     margin: 39px 113px 40px 43px;
+//   }
 
-  &--leave-feedback {
-    width: 276px;
-    height: 140px;
-    margin: 41px 21px 22px 23px;
-  }
-}
+//   &--leave-feedback {
+//     width: 276px;
+//     height: 140px;
+//     margin: 41px 21px 22px 23px;
+//   }
+// }

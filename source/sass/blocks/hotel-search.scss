@@ -1,14 +1,5 @@
 .hotel-search__card {
-  height: 287px;
-  overflow: hidden;
-  text-align: center;
-}
-
-.hotel-search__text-wrapper {
-  width: 260px;
-  height: 107px;
-  margin: 33px 30px 40px 30px;
-  display: inline-block;
+  padding: 33px 20px 49px 20px;
 }
 
 .hotel-search__link {
@@ -16,8 +7,6 @@
   text-align: center;
   margin: 0 auto;
   padding: 17px 47px 19px 47px;
-  margin-top: 40px;
   color: #ffffff;
-  width: 280px;
-  height: 58px;
+  display: inline-block;
 }

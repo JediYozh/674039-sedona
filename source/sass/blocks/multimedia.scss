@@ -1,17 +1,23 @@
 .multimedia__item {
   border-bottom: 1px solid #e5e5e5;
-  height: 414px;
+  // height: 414px;
   position: relative;
 }
 
 .multimedia__card {
   @include reset-indents;
-  height: 100%;
-  width: 100%;
   position: relative;
 
+  &--main {
+    padding: 44px 24px 33px 27px;
+  }
+
   &--photo {
-    margin: 0 20px;
+    padding: 22px 20px 23px 20px;
+  }
+
+  &--video {
+    padding: 39px 41px 40px 44px;
   }
 }
 
@@ -20,8 +26,7 @@
 }
 
 .multimedia__photo {
-  margin: 21px 0;
-  text-align: center;
+  margin-bottom: 22px;
 }
 
 .multimedia__info {

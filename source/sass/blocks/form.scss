@@ -89,18 +89,6 @@
     margin: -1px 29px 0 5px;
     vertical-align: middle;
   }
-
-  &::placeholder {
-    @include text-style;
-    font-size: $font-size-medium;
-    font-weight: bold;
-    line-height: 58px;
-    vertical-align: middle;
-    text-align: left;
-    color: #000000;
-    padding-left: 22px;
-    opacity: 1;
-  }
 }
 
 .form__field--about-area {
@@ -108,18 +96,6 @@
   height: 160px;
   margin-top: 21px;
   margin-bottom: 51px;
-
-  &::placeholder {
-    @include text-style;
-    width: 225px;
-    height: 43px;
-    font-size: $font-size-medium;
-    font-weight: bold;
-    line-height: 1.44;
-    text-align: left;
-    color: #000000;
-    padding: 22px 33px 95px 31px;
-  }
 }
 
 .form__submit {
