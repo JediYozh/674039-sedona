@@ -1,0 +1,78 @@
+.card {
+  &--inverted {
+    background-color: $inverted-color;
+  }
+
+  &--secondary {
+    background-color: #eeeeee;
+    border-bottom: 1px solid #d6d6d6;
+  }
+}
+
+.card__title {
+  @include text-style;
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.44;
+  color: $title-color;
+
+  &--inverted {
+    color: #ffffff;
+  }
+}
+
+.card__text {
+  @include text-style;
+  margin: 0;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.5;
+  color: $secondary-text-color;
+
+  &--inverted {
+    color: #ffffff;
+  }
+
+  &--definition {
+    line-height: 1.86;
+  }
+}
+
+.card__number {
+  @include text-style;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.5;
+  margin-top: 7px;
+  margin-bottom: 12px;
+
+  &--inverted {
+    color: #ffffff;
+  }
+
+  &--secondary {
+    color: $secondary-text-color;
+  }
+}
+
+.card__wrapper {
+  &--photo {
+    width: 269px;
+    height: 112px;
+    margin: 44px 24px 33px 27px;
+  }
+
+  &--before-video {
+    width: 236px;
+    height: 113px;
+    margin: 39px 113px 40px 43px;
+  }
+
+  &--leave-feedback {
+    width: 276px;
+    height: 140px;
+    margin: 41px 21px 22px 23px;
+  }
+}

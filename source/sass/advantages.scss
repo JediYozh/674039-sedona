@@ -1,0 +1,17 @@
+.advantages__list {
+  @include reset-list;
+}
+
+.advantages__card {
+  height: 211px;
+  overflow: hidden;
+  line-height: 1.5;
+}
+
+.advantages__text-wrapper {
+  padding: 0;
+  display: inline-block;
+  margin: 61px 27px 45px 28px;
+  height: 105px;
+  width: 265px;
+}

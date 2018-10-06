@@ -1,0 +1,73 @@
+.multimedia__item {
+  border-bottom: 1px solid #e5e5e5;
+  height: 414px;
+  position: relative;
+}
+
+.multimedia__card {
+  @include reset-indents;
+  height: 100%;
+  width: 100%;
+  position: relative;
+
+  &--photo {
+    margin: 0 20px;
+  }
+}
+
+.multimedia__list {
+  @include reset-list;
+}
+
+.multimedia__photo {
+  margin: 21px 0;
+  text-align: center;
+}
+
+.multimedia__info {
+  width: 100%;
+  position: relative;
+}
+
+.multimedia__photo-name {
+  @include text-style;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 1.71;
+  text-align: left;
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+.multimedia__author-name {
+  @include text-style;
+  text-transform: none;
+  font-size: 14px;
+  line-height: 1.71;
+  text-align: left;
+  margin-top: 0;
+  font-weight: normal;
+  margin-bottom: 11px;
+}
+
+.multimedia__likes {
+  display: inline;
+}
+
+.multimedia__likes-counter {
+  @include text-style;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 1.71;
+  text-align: left;
+  vertical-align: bottom;
+}
+
+.multimedia__like-button {
+  background: url("../img/icon-like.svg") no-repeat 50% 50%;
+  height: 23px;
+  width: 21px;
+  border: none;
+  vertical-align: top;
+  margin-right: 14px;
+}

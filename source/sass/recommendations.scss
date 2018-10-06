@@ -1,0 +1,51 @@
+.recommendations__list {
+  @include reset-list;
+}
+
+.title-wrapper {
+  margin-top: 26px;
+  margin-left: 22px;
+  display: table;
+
+  &--souvenirs {
+    display: table;
+    margin-top: 22px;
+    margin-left: 25px;
+  }
+
+  &--food {
+    display: table;
+    margin-top: 27px;
+    margin-left: 18px;
+  }
+}
+
+.recommendations__icon {
+  position: relative;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.recommendations__title {
+  @include text-style;
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.44;
+}
+
+.recommendations__text {
+  @include text-style;
+  margin: 23px auto 22px 69px;
+  width: 210px;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.5;
+  text-align: left;
+  color: $secondary-text-color;
+
+  &--last {
+    margin: 23px auto 42px 69px;
+  }
+}

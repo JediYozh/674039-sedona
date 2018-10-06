@@ -1,0 +1,27 @@
+.social__list {
+  @include reset-list;
+}
+
+.social__item {
+  display: inline;
+}
+
+.social__link {
+  text-decoration: none;
+}
+
+.social__icon {
+  background-color: #81b3d2;
+
+  &--tw {
+    padding: 17px 14px;
+  }
+
+  &--fc {
+    padding: 14px 19px 16px 19px;
+  }
+
+  &--yt {
+    padding: 17px 13px;
+  }
+}

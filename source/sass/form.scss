@@ -1,0 +1,136 @@
+.form__item {
+  margin: 0 20px 25px 20px;
+}
+
+.form__item-wrapper {
+  border-top: 1px solid #e5e5e5;
+}
+
+.form__item-title {
+  @include text-style;
+  margin-top: 24px;
+  margin-bottom: 0;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.44;
+}
+
+.form__group {
+  &--radio {
+    margin-top: 32px;
+    height: 46px;
+  }
+
+  &--checkbox {
+    height: 46px;
+    margin-top: 24px;
+  }
+}
+
+.form__label {
+  @include text-style;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.86;
+  text-align: left;
+  display: inline-block;
+
+  &--contact {
+    margin: 29px auto 14px 22px;
+  }
+
+  &--email {
+    margin-top: 20px;
+    display: inline-block;
+  }
+
+  &--radio {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.44;
+    text-align: left;
+    text-transform: none;
+  }
+
+  &--checkbox {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.44;
+    text-align: left;
+    text-transform: none;
+  }
+}
+
+.form__field {
+  height: 58px;
+  background-color: #f2f2f2;
+  border: none;
+  text-align: left;
+
+  &--naiming {
+    width: 192px;
+    margin-top: 20px;
+  }
+
+  &--firstname {
+    width: 230px;
+  }
+
+  &--contact {
+    width: 280px;
+  }
+
+  &--radio {
+    vertical-align: middle;
+    margin: -1px 27px 0 5px;
+  }
+
+  &--checkbox {
+    margin: -1px 29px 0 5px;
+    vertical-align: middle;
+  }
+
+  &::placeholder {
+    @include text-style;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 58px;
+    vertical-align: middle;
+    text-align: left;
+    color: #000000;
+    padding-left: 22px;
+    opacity: 1;
+  }
+}
+
+.form__field--about-area {
+  width: 279px;
+  height: 160px;
+  margin-top: 21px;
+  margin-bottom: 51px;
+
+  &::placeholder {
+    @include text-style;
+    width: 225px;
+    height: 43px;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.44;
+    text-align: left;
+    color: #000000;
+    padding: 22px 33px 95px 31px;
+  }
+}
+
+.form__submit {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 47px;
+}
+
+.form__button {
+  width: 280px;
+  height: 58px;
+  margin: 0 auto;
+  padding: 0;
+}

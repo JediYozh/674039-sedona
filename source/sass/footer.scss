@@ -1,0 +1,39 @@
+.footer {
+  height: 233px;
+  text-align: center;
+}
+
+.footer__hash {
+  @include text-style;
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 1.24;
+  color: #000000;
+  margin: 31px 93px 41px 91px;
+  display: inline-block;
+}
+
+.footer__links {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.footer__developer {
+  display: table;
+  overflow: hidden;
+  margin: 0 auto 25px;
+}
+
+.footer__text {
+  @include text-style;
+  vertical-align: middle;
+  display: table-cell;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.86;
+}
+
+.footer__developer-icon {
+  margin-left: 11px;
+  vertical-align: middle;
+}
