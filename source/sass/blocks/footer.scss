@@ -5,7 +5,7 @@
 
 .footer__hash {
   @include text-style;
-  font-size: 21px;
+  font-size: $font-size-big;
   font-weight: bold;
   line-height: 1.24;
   color: #000000;
@@ -28,7 +28,7 @@
   @include text-style;
   vertical-align: middle;
   display: table-cell;
-  font-size: 14px;
+  font-size: $font-size-small;
   font-weight: normal;
   line-height: 1.86;
 }

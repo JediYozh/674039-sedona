@@ -1,27 +1,26 @@
-@import "./mixins.scss";
-@import "./common-classes.scss";
-@import "./variables.scss";
-@import "./header.scss";
-@import "./main-nav.scss";
-@import "./menu-list.scss";
-@import "./welcome.scss";
-@import "./definition.scss";
-@import "./card.scss";
-@import "./advantages.scss";
-@import "./recommendations.scss";
-@import "./hotel-search.scss";
-@import "./footer.scss";
-@import "./social.scss";
-@import "./main.scss";
-@import "./multimedia.scss";
-@import "./video.scss";
-@import "./page-form.scss";
-@import "./form.scss";
+@import "./utils/variables.scss";
+@import "./utils/mixins.scss";
+@import "./utils/common-classes.scss";
+@import "./blocks/header.scss";
+@import "./blocks/main-nav.scss";
+@import "./blocks/menu-list.scss";
+@import "./blocks/welcome.scss";
+@import "./blocks/definition.scss";
+@import "./blocks/card.scss";
+@import "./blocks/advantages.scss";
+@import "./blocks/recommendations.scss";
+@import "./blocks/hotel-search.scss";
+@import "./blocks/footer.scss";
+@import "./blocks/social.scss";
+@import "./blocks/main.scss";
+@import "./blocks/multimedia.scss";
+@import "./blocks/video.scss";
+@import "./blocks/form.scss";
 
 html,
 body {
   @include reset-indents;
   width: 320px;
-  font-family: "PT Sans", sans-serif;
+  font-family: $font-family-main;
   text-transform: uppercase;
 }

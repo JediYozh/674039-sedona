@@ -1,6 +1,6 @@
 .card {
   &--inverted {
-    background-color: $inverted-color;
+    background-color: $color-inverted;
   }
 
   &--secondary {
@@ -12,10 +12,10 @@
 .card__title {
   @include text-style;
   margin: 0;
-  font-size: 18px;
+  font-size: $font-size-medium;
   font-weight: bold;
   line-height: 1.44;
-  color: $title-color;
+  color: $color-title;
 
   &--inverted {
     color: #ffffff;
@@ -25,10 +25,10 @@
 .card__text {
   @include text-style;
   margin: 0;
-  font-size: 14px;
+  font-size: $font-size-small;
   font-weight: normal;
   line-height: 1.5;
-  color: $secondary-text-color;
+  color: $color-secondary-text;
 
   &--inverted {
     color: #ffffff;
@@ -42,7 +42,7 @@
 .card__number {
   @include text-style;
   color: #ffffff;
-  font-size: 14px;
+  font-size: $font-size-small;
   font-weight: normal;
   line-height: 1.5;
   margin-top: 7px;
@@ -53,7 +53,7 @@
   }
 
   &--secondary {
-    color: $secondary-text-color;
+    color: $color-secondary-text;
   }
 }
 

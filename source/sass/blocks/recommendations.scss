@@ -2,7 +2,7 @@
   @include reset-list;
 }
 
-.title-wrapper {
+.recommendations__title-wrapper {
   margin-top: 26px;
   margin-left: 22px;
   display: table;
@@ -30,7 +30,7 @@
   @include text-style;
   display: table-cell;
   vertical-align: middle;
-  font-size: 18px;
+  font-size: $font-size-medium;
   font-weight: bold;
   line-height: 1.44;
 }
@@ -39,11 +39,11 @@
   @include text-style;
   margin: 23px auto 22px 69px;
   width: 210px;
-  font-size: 14px;
+  font-size: $font-size-small;
   font-weight: normal;
   line-height: 1.5;
   text-align: left;
-  color: $secondary-text-color;
+  color: $color-secondary-text;
 
   &--last {
     margin: 23px auto 42px 69px;
