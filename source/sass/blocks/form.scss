@@ -13,6 +13,7 @@
   font-size: $font-size-medium;
   font-weight: bold;
   line-height: 1.44;
+  text-transform: uppercase;
 }
 
 .form__group {
@@ -34,6 +35,7 @@
   line-height: 1.86;
   text-align: left;
   display: inline-block;
+  text-transform: uppercase;
 
   &--contact {
     margin: 29px auto 14px 22px;
@@ -45,19 +47,17 @@
   }
 
   &--radio {
+    text-transform: none;
     font-size: $font-size-medium;
     font-weight: bold;
     line-height: 1.44;
-    text-align: left;
-    text-transform: none;
   }
 
   &--checkbox {
+    text-transform: none;
     font-size: $font-size-medium;
     font-weight: bold;
     line-height: 1.44;
-    text-align: left;
-    text-transform: none;
   }
 }
 

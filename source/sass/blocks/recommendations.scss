@@ -1,5 +1,6 @@
 .recommendations__list {
   @include reset-list;
+  text-transform: uppercase;
 }
 
 .recommendations__title-wrapper {

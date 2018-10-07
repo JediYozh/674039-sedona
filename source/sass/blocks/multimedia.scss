@@ -1,6 +1,5 @@
 .multimedia__item {
   border-bottom: 1px solid #e5e5e5;
-  // height: 414px;
   position: relative;
 }
 
@@ -42,11 +41,11 @@
   text-align: left;
   margin-top: 0;
   margin-bottom: 8px;
+  text-transform: uppercase;
 }
 
 .multimedia__author-name {
   @include text-style;
-  text-transform: none;
   font-size: $font-size-small;
   line-height: 1.71;
   text-align: left;

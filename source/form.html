@@ -5,10 +5,6 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="./css/style.css">
-  <link rel="stylesheet" href="./fonts/ptsans.woff">
-  <link rel="stylesheet" href="./fonts/ptsans.woff2">
-  <link rel="stylesheet" href="./fonts/ptsansbold.woff">
-  <link rel="stylesheet" href="./fonts/ptsansbold.woff2">
   <title>Форма Отзыва</title>
 </head>
 
@@ -61,15 +57,16 @@
             <h2 class="form__item-title">Представьтесь:</h2>
             <div class="form__group">
               <label class="form__label form__label--firstname" for="firstname">Имя*:</label>
-              <input class="form__field form__field--naming form__field--firstname" type="text" name="firstname" id="firstname">
+              <input class="form__field form__field--naming form__field--firstname" type="text" name="firstname" id="firstname"
+                placeholder="Петр">
             </div>
             <div class="form__group">
               <label class="form__label form__label--lastname" for="lastname">Фамилия*:</label>
-              <input class="form__field form__field--naming" type="text" name="lastname" id="lastname">
+              <input class="form__field form__field--naming" type="text" name="lastname" id="lastname" placeholder="Иванов">
             </div>
             <div class="form__group">
               <label class="form__label form__label--patronymic" for="patronymic">Отчество:</label>
-              <input class="form__field form__field--naming" type="text" name="patronymic" id="patronymic">
+              <input class="form__field form__field--naming" type="text" name="patronymic" id="patronymic" placeholder="Александрович">
             </div>
           </div>
         </div>
@@ -79,13 +76,13 @@
             <div class="form__group">
               <label class="form__label form__label--contact" for="phone">Контактный телефон*:</label>
               <div class="form__group-fields">
-                <input class="form__field form__field--contact" type="tel" name="phone" id="phone">
+                <input class="form__field form__field--contact" type="tel" name="phone" id="phone" placeholder="Введите телефон">
               </div>
             </div>
             <div class="form__group">
               <label class="form__label form__label--contact form__label--email" for="email">Электронная почта*:</label>
               <div class="form__group-fields">
-                <input class="form__field form__field--contact" type="email" name="email" id="email">
+                <input class="form__field form__field--contact" type="email" name="email" id="email" placeholder="Введите e-mail">
               </div>
             </div>
           </div>
@@ -132,7 +129,7 @@
           <div class="form__item">
             <h2 class="form__item-title">Опишите свои эмоции:</h2>
             <div class="form__group">
-              <textarea class="form__field form__field--about-area" name="about" id="about"></textarea>
+              <textarea class="form__field form__field--about-area" name="about" id="about" placeholder="Опишите подробно все свои восторги"></textarea>
             </div>
           </div>
         </div>

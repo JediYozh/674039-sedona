@@ -1,5 +1,6 @@
-.video {
+.video__player-wrapper {
   position: relative;
+  height: 201px;
 }
 
 .video__slider {
@@ -7,7 +8,8 @@
   width: 280px;
   opacity: 0.6;
   position: absolute;
-  margin: -50px 20px 0 20px;
+  bottom: 0;
+  left: 20px;
   background-color: #000000;
 }
 
