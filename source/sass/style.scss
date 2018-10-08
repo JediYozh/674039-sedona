@@ -1,0 +1,29 @@
+@import "./utils/font.scss";
+@import "./utils/variables.scss";
+@import "./utils/mixins.scss";
+@import "./blocks/visually-hidden.scss";
+@import "./blocks/header.scss";
+@import "./blocks/main-nav.scss";
+@import "./blocks/menu-list.scss";
+@import "./blocks/welcome.scss";
+@import "./blocks/definition.scss";
+@import "./blocks/card.scss";
+@import "./blocks/advantages.scss";
+@import "./blocks/recommendations.scss";
+@import "./blocks/hotel-search.scss";
+@import "./blocks/footer.scss";
+@import "./blocks/social.scss";
+@import "./blocks/main.scss";
+@import "./blocks/multimedia.scss";
+@import "./blocks/video.scss";
+@import "./blocks/form.scss";
+@import "./blocks/review.scss";
+@import "./blocks/button.scss";
+@import "./blocks/toogle-button.scss";
+
+html,
+body {
+  @include reset-indents;
+  width: 320px;
+  font-family: $font-family-primary;
+}

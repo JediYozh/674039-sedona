@@ -1,0 +1,11 @@
+.button {
+  &--inverted {
+    @include text-style;
+    background-color: #81b3d2;
+    border: none;
+    color: #ffffff;
+    font-size: $font-size-big;
+    font-weight: bold;
+    line-height: 1.24;
+  }
+}

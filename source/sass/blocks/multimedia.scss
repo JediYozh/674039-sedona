@@ -1,0 +1,77 @@
+.multimedia__item {
+  border-bottom: 1px solid #e5e5e5;
+  position: relative;
+}
+
+.multimedia__card {
+  @include reset-indents;
+  position: relative;
+
+  &--main {
+    padding: 44px 24px 33px 27px;
+  }
+
+  &--photo {
+    padding: 22px 20px 23px 20px;
+  }
+
+  &--video {
+    padding: 39px 41px 40px 44px;
+  }
+}
+
+.multimedia__list {
+  @include reset-list;
+}
+
+.multimedia__photo {
+  margin-bottom: 22px;
+}
+
+.multimedia__info {
+  width: 100%;
+  position: relative;
+}
+
+.multimedia__photo-name {
+  @include text-style;
+  font-size: $font-size-small;
+  font-weight: bold;
+  line-height: 1.71;
+  text-align: left;
+  margin-top: 0;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+
+.multimedia__author-name {
+  @include text-style;
+  font-size: $font-size-small;
+  line-height: 1.71;
+  text-align: left;
+  margin-top: 0;
+  font-weight: normal;
+  margin-bottom: 11px;
+}
+
+.multimedia__likes {
+  display: inline;
+}
+
+.multimedia__likes-counter {
+  @include text-style;
+  font-size: $font-size-small;
+  font-weight: bold;
+  line-height: 1.71;
+  text-align: left;
+  vertical-align: bottom;
+}
+
+.multimedia__like-button {
+  background: url("../../img/icon-like.svg") no-repeat 50% 50%;
+  height: 23px;
+  width: 21px;
+  border: none;
+  vertical-align: top;
+  margin-right: 14px;
+}

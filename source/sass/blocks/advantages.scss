@@ -1,0 +1,23 @@
+.advantages__list {
+  @include reset-list;
+}
+
+.advantages__card {
+  padding: 61px 27px 45px 28px;
+
+  &--bridge {
+    padding: 45px 31px 42px 30px;
+  }
+
+  &--square {
+    padding: 33px 41px 32px 41px;
+  }
+
+  &--road {
+    padding: 33px 56px 32px 57px;
+  }
+
+  &--tourists {
+    padding: 33px 37px 32px 37px;
+  }
+}

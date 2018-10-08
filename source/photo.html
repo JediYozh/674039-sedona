@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./css/style.css">
   <title>Фото и Видео</title>
 </head>
 
@@ -11,7 +12,7 @@
 
   <header class="header">
     <nav class="main-nav">
-      <button class="main-nav__toggle-button" type="button">Закрыть меню</button>
+      <button class="main-nav__button toggle-button" type="button"></button>
       <ul class="main-nav__list menu-list">
         <li class="menu-list__item">
           <a class="menu-list__link" href="index.html">Главная</a>
@@ -29,27 +30,27 @@
     </nav>
     <div class="header__wrapper">
       <a class="header__logo">
-        <img class="header__logo-image" src="http://placehold.it/102x30" width="102" height="30" alt="City of Sedona">
+        <img class="header__logo-image" src="./img/logo-sedona-mobile.svg" width="102" height="83" alt="City of Sedona">
       </a>
-      <button class="header__toggle-button" type="button">Открыть меню</button>
+      <button class="header__button toggle-button" type="button"></button>
     </div>
   </header>
 
   <main class="main">
     <div class="main__banner">
-      <img class="main__banner-photo" src="http://placehold.it/230x40" width="230" height="40" alt="Sedona">
+      <img class="main__banner-photo" src="./img/text-sedona.svg" width="230" height="40" alt="Sedona">
     </div>
 
     <section class="multimedia">
-      <div class="multimedia__card card">
+      <div class="multimedia__card multimedia__card--main card">
         <h1 class="card__title">Фото и Видео</h1>
-        <p class="card__text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам
+        <p class="card__text card__text--large">Не можете решиться на путешествие из-за курса? Фотографии помогут вам
           забыть о политике и экономике.</p>
       </div>
       <ul class="multimedia__list">
         <li class="multimedia__item">
-          <figure class="multimedia__card">
-            <img class="multimedia__photo" src="http://placehold.it/280x280" width="280" height="280" alt="Road">
+          <figure class="multimedia__card multimedia__card--photo">
+            <img class="multimedia__photo" src="img/photo-sunset-mobile@1x.jpg" width="280" height="280" alt="Road">
             <figcaption class="multimedia__info">
               <p class="multimedia__photo-name">Народные просторы</p>
               <p class="multimedia__author-name">Автор фото: Борис</p>
@@ -64,8 +65,8 @@
           </figure>
         </li>
         <li class="multimedia__item">
-          <figure class="multimedia__card">
-            <img class="multimedia__photo" src="http://placehold.it/280x280" width="280" height="280" alt="Some bush">
+          <figure class="multimedia__card multimedia__card--photo">
+            <img class="multimedia__photo" src="img/photo-cactus-mobile@1x.jpg" width="280" height="280" alt="Some bush">
             <figcaption class="multimedia__info">
               <p class="multimedia__photo-name">Местная растительность</p>
               <p class="multimedia__author-name">Автор фото: Сергей</p>
@@ -80,8 +81,8 @@
           </figure>
         </li>
         <li class="multimedia__item">
-          <figure class="multimedia__card">
-            <img class="multimedia__photo" src="http://placehold.it/280x280" width="280" height="280" alt="Forest">
+          <figure class="multimedia__card multimedia__card--photo">
+            <img class="multimedia__photo" src="img/photo-roads-mobile@1x.jpg" width="280" height="280" alt="Forest">
             <figcaption class="multimedia__info">
               <p class="multimedia__photo-name">Дорога на Север</p>
               <p class="multimedia__author-name">Автор фото: Петр</p>
@@ -96,8 +97,8 @@
           </figure>
         </li>
         <li class="multimedia__item">
-          <figure class="multimedia__card">
-            <img class="multimedia__photo" src="http://placehold.it/280x280" width="280" height="280" alt="Devil
+          <figure class="multimedia__card multimedia__card--photo">
+            <img class="multimedia__photo" src="img/photo-bridge-mobile@1x.jpg" width="280" height="280" alt="Devil
             bridge">
             <figcaption class="multimedia__info">
               <p class="multimedia__photo-name">Мост дьявола</p>
@@ -114,24 +115,29 @@
         </li>
       </ul>
 
-      <div class="multimedia__card card">
-        <h2 class="card__title">Вы еще сомневаетесь?</h2>
-        <p class="card__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в
+      <div class="multimedia__card multimedia__card--video card">
+        <h2 class="card__title card__title--video">Вы еще сомневаетесь?</h2>
+        <p class="card__text card__text--large">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали
+          в
           очередной раз!</p>
       </div>
 
-      <div class="multimedia__item video">
-        <img src="http://placehold.it/321x201" width="321" height="201" alt="Road">
-        <div class="video__slider"></div>
+      <div class="multimedia__video video">
+        <div class="video__player-wrapper">
+          <img class="video__player-photo" src="img/video-mobile@1x.jpg" width="321" height="201" alt="Road">
+          <div class="video__slider">
+            <input class="video__rewinder" type="range" name="rewinder" id="rewinder">
+          </div>
+        </div>
         <div class="video__menu">
-          <button class="video__replay-button" type="button">
-            <img class="video__replay-icon" src="http://placehold.it/16x20" width="16" height="20" alt="Replay">
+          <button class="video__button video__button--replay" type="button">
+            <img class="video__replay-icon" src="img/icon-video-replay.svg" width="16" height="20" alt="Replay">
           </button>
-          <button class="subtitles-button" type="button">
-            <img class="video__subtitles-icon" src="http://placehold.it/32x20" width="32" height="20" alt="Subtitles">
+          <button class="video__button video__button--subtitles" type="button">
+            <img class="video__subtitles-icon" src="img//icon-video-subtitles.svg" width="32" height="20" alt="Subtitles">
           </button>
-          <button class="video__fullscreen-button" type="button">
-            <img class="video__fullscreen-icon" src="http://placehold.it/20x20" width="20" height="20" alt="Full screen">
+          <button class="video__button video__button--fullscreen" type="button">
+            <img class="video__fullscreen-icon" src="img/icon-video-fullscreen.svg" width="20" height="20" alt="Full screen">
           </button>
         </div>
       </div>
@@ -143,19 +149,25 @@
     <div class="footer__links social">
       <ul class="social__list">
         <li class="social__item">
-          <a class="social__link social__link--vk" href="">Вконтакте</a>
+          <a class="social__link" href="">
+            <img class="social__icon social__icon--tw" src="./img/icon-twitter.svg" width="18" height="14" />
+          </a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--fc" href="">Facebook</a>
+          <a class="social__link " href="">
+            <img class="social__icon social__icon--fc" src="./img/icon-facebook.svg" width="9" height="18" />
+          </a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--yt" href="">YouTube</a>
+          <a class="social__link" href="">
+            <img class="social__icon social__icon--yt" src="./img/icon-youtube.svg" width="20" height="14" />
+          </a>
         </li>
       </ul>
     </div>
     <div class="footer__developer">
       <span class="footer__text">Разработано</span>
-      <img class="footer__developer-icon" src="http://placehold.it/27x34" width="27" height="34" alt="HTML Academy">
+      <img class="footer__developer-icon" src="./img/logo-htmlacademy.svg" width="27" height="34" alt="HTML Academy">
     </div>
   </footer>
 </body>

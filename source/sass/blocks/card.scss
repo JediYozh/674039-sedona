@@ -1,0 +1,84 @@
+.card {
+  &--inverted {
+    background-color: $color-inverted;
+  }
+
+  &--secondary {
+    background-color: #eeeeee;
+    border-bottom: 1px solid #d6d6d6;
+  }
+}
+
+.card__title {
+  @include text-style;
+  margin: 0;
+  font-size: $font-size-medium;
+  font-weight: bold;
+  line-height: 1.44;
+  text-transform: uppercase;
+  color: $color-title;
+  margin-bottom: 30px;
+
+  &--inverted {
+    color: #ffffff;
+  }
+
+  &--advantage {
+    margin-bottom: 14px;
+  }
+
+  &--hotel {
+    font-size: $font-size-big;
+    font-weight: bold;
+    line-height: 1.24;
+    margin-bottom: 24px;
+  }
+
+  &--video {
+    margin-bottom: 32px;
+  }
+}
+
+.card__text {
+  @include text-style;
+  margin: 0;
+  font-size: $font-size-small;
+  font-weight: normal;
+  line-height: 1.5;
+  color: $color-secondary-text;
+  text-transform: uppercase;
+
+  &--inverted {
+    color: #ffffff;
+  }
+
+  &--definition {
+    line-height: 1.86;
+  }
+
+  &--large {
+    line-height: 1.71;
+  }
+
+  &--hotel {
+    margin-bottom: 30px;
+  }
+}
+
+.card__number {
+  @include text-style;
+  font-size: $font-size-small;
+  font-weight: normal;
+  line-height: 1.5;
+  margin-bottom: 18px;
+  text-transform: uppercase;
+
+  &--inverted {
+    color: #ffffff;
+  }
+
+  &--secondary {
+    color: $color-secondary-text;
+    margin-bottom: 18px;
+  }
+}
