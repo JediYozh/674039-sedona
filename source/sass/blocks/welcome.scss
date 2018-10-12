@@ -2,6 +2,14 @@
   height: 390px;
   background: url("../../img/bg-back-mobile@1x.jpg") no-repeat 50% 50%;
   text-align: center;
+
+  @media (min-width: $width-tablet) {
+    height: 518px;
+    background: url("../../img/bg-back-tablet@1x.jpg") no-repeat;
+    background-position: center;
+    width: 100%;
+    // background-size: 748px auto;
+  }
 }
 
 .welcome__banner {

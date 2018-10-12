@@ -2,4 +2,8 @@
   position: absolute;
   top: 17px;
   right: 20px;
+
+  @media (min-width: $width-tablet) {
+    display: none;
+  }
 }

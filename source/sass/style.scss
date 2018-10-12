@@ -24,6 +24,6 @@
 html,
 body {
   @include reset-indents;
-  width: 320px;
+  min-width: 320px;
   font-family: $font-family-primary;
 }

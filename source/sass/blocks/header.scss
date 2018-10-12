@@ -1,7 +1,25 @@
-.header__wrapper {
-  height: 56px;
+.header {
   text-align: center;
   position: relative;
+
+  @media (min-width: $width-tablet) {
+    min-height: 56px;
+  }
+}
+
+.header__wrapper {
+  min-height: 56px;
+  position: relative;
+
+  @media (min-width: $width-tablet) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    display: inline-block;
+    width: 102px;
+  }
 }
 
 .header__button {
@@ -9,4 +27,5 @@
   width: 23px;
   height: 21px;
   border: none;
+  top: 24px;
 }
