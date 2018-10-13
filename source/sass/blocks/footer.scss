@@ -2,6 +2,13 @@
   height: 233px;
   text-align: center;
   text-transform: uppercase;
+
+  @media (min-width: $width-tablet) {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 120px;
+  }
 }
 
 .footer__hash {
@@ -12,16 +19,28 @@
   color: #000000;
   margin: 31px 93px 41px 91px;
   display: inline-block;
+
+  @media (min-width: $width-tablet) {
+    margin: 0;
+  }
 }
 
 .footer__links {
   margin-bottom: 40px;
+
+  @media (min-width: $width-tablet) {
+    margin: 0;
+  }
 }
 
 .footer__developer {
   display: table;
   overflow: hidden;
   margin: 0 auto 25px;
+
+  @media (min-width: $width-tablet) {
+    margin: 0;
+  }
 }
 
 .footer__text {

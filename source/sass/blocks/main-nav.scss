@@ -1,19 +1,7 @@
 .main-nav {
   position: relative;
   text-transform: uppercase;
-  display: block;
   margin: 0 auto;
-
-  @media (min-width: $width-desktop) {
-    width: 1200px;
-  }
-}
-
-.main-nav__list {
-  @media (min-width: $width-tablet) {
-    display: flex;
-    flex-direction: row;
-  }
 }
 
 .main-nav__button {

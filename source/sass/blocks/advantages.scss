@@ -2,6 +2,20 @@
   @include reset-list;
 }
 
+.advantages__item {
+  @media (min-width: $width-tablet) {
+    &--bridge {
+      display: flex;
+    }
+  }
+}
+
+.advantages__group {
+  @media (min-width: $width-tablet) {
+    display: flex;
+  }
+}
+
 .advantages__card {
   padding: 61px 27px 45px 28px;
 
@@ -19,5 +33,39 @@
 
   &--tourists {
     padding: 33px 37px 32px 37px;
+  }
+
+  @media (min-width: $width-tablet) {
+    order: -1;
+    padding: 46px 47px 49px 47px;
+    flex-basis: 162px;
+    height: 161px;
+
+    &--bridge {
+      order: 1;
+    }
+  }
+
+  @media (min-width: $width-desktop) {
+    flex-basis: 265px;
+    height: 140px;
+    padding: 53px 67px 63px 68px;
+  }
+}
+
+.advantages__wrapper {
+  @media (min-width: $width-tablet) {
+    display: flex;
+  }
+}
+
+.advantages__photo {
+  @media (min-width: $width-tablet) {
+    height: 256px;
+    width: 512px;
+  }
+
+  @media (min-width: $width-desktop) {
+    width: 800px;
   }
 }

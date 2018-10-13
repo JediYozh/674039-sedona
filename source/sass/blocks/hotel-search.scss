@@ -1,5 +1,13 @@
 .hotel-search__card {
   padding: 33px 20px 49px 20px;
+
+  @media (min-width: $width-tablet) {
+    padding: 57px 155px 58px 155px;
+  }
+
+  @media (min-width: $width-desktop) {
+    padding: 57px 371px 66px 371px;
+  }
 }
 
 .hotel-search__link {
@@ -9,4 +17,15 @@
   padding: 17px 47px 19px 47px;
   color: #ffffff;
   display: block;
+}
+
+.hotel-search__map {
+  @media (min-width: $width-tablet) {
+    height: 350px;
+    width: 768px;
+  }
+
+  @media (min-width: $width-desktop) {
+    width: 1200px;
+  }
 }

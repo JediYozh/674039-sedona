@@ -36,16 +36,16 @@
     </div>
   </header>
 
-  <!-- <main class="main">
+  <main class="main">
     <section class="welcome">
       <h1 class="visually-hidden">Добро пожаловать в Седону</h1>
       <img class="welcome__banner" src="./img/text-sedona-index.svg" width="281" height="214" alt="Because the Grand
       Canyon sucks">
-    </section> -->
+    </section>
 
-  <!-- <section class="definition">
+    <section class="definition">
       <div class="definition__card card">
-        <h2 class="card__title">Седона - небольшой городок в Аризоне, заслуживающий большего!</h2>
+        <h2 class="card__title card__title--definition">Седона - небольшой городок в Аризоне, заслуживающий большего!</h2>
         <p class="card__text card__text--definition">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
       </div>
     </section>
@@ -54,37 +54,36 @@
       <h2 class="visually-hidden">Почему стоит посетить Седону</h2>
       <ul class="advantages__list">
         <li class="advantages__item">
-          <div class="advantages__card card card--inverted">
-            <p class="card__title card__title--inverted card__title--advantage">Настоящий городок</p>
-            <p class="card__number card__number--inverted">№1</p>
-            <p class="card__text card__text--inverted">Седона не аттракцион для туристов, там течет своя жизнь</p>
+          <div class="advantages__wrapper">
+            <div class="advantages__card card card--inverted">
+              <p class="card__title card__title--inverted card__title--advantage">Настоящий городок</p>
+              <p class="card__number card__number--inverted">№1</p>
+              <p class="card__text card__text--inverted">Седона не аттракцион для туристов, там течет своя жизнь</p>
+            </div>
+            <img class="advantages__photo" src="./img/main-city-mobile@1x.jpg" width="320" height="260" alt="House in Sedona" />
           </div>
           <div class="advantages__recommendations recommendations">
             <ul class="recommendations__list">
               <li class="recommendations__item">
-                <img class="recommendations__photo" src="./img/main-city-mobile@1x.jpg" width="320" height="260" alt="House in Sedona" />
                 <div class="recommendations__title-wrapper">
-                  <div class="recommendations__icon">
-                    <img src="img/icon-house.svg" width="36" height="37" alt="House">
-                  </div>
+                  <img class="recommendations__icon recommendations__icon--housting" src="img/icon-house.svg" width="36"
+                    height="37" alt="House">
                   <h3 class="recommendations__title">Жилье</h3>
                 </div>
                 <p class="recommendations__text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
               </li>
-              <li class="recommendations__item">
+              <li class="recommendations__item recommendations__item--souvenirs">
                 <div class="recommendations__title-wrapper recommendations__title-wrapper--souvenirs">
-                  <div class="recommendations__icon">
-                    <img src="img/icon-gift.svg" width="36" height="37" alt="Souvenirs">
-                  </div>
+                  <img class="recommendations__icon recommendations__icon--souvenirs" src="img/icon-gift.svg" width="36"
+                    height="37" alt="Souvenirs">
                   <h3 class="recommendations__title">Сувениры</h3>
                 </div>
                 <p class="recommendations__text">Не только китайского, но и местного производства!</p>
               </li>
               <li class="recommendations__item">
                 <div class="recommendations__title-wrapper recommendations__title-wrapper--food">
-                  <div class="recommendations__icon">
-                    <img src="img/icon-burger.svg" width="36" height="37" alt="Food">
-                  </div>
+                  <img class="recommendations__icon recommendations__icon--food" src="img/icon-burger.svg" width="36"
+                    height="37" alt="Food">
                   <h3 class="recommendations__title">Еда</h3>
                 </div>
                 <p class="recommendations__text recommendations__text--last">Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ
@@ -93,7 +92,7 @@
             </ul>
           </div>
         </li>
-        <li class="advantages__item">
+        <li class="advantages__item advantages__item--bridge">
           <div class="advantages__card advantages__card--bridge card card--inverted">
             <p class="card__title card__title--inverted card__title--advantage">Там есть мост дьявола</p>
             <p class="card__number card__number--inverted">№2</p>
@@ -101,27 +100,29 @@
           </div>
           <img class="advantages__photo" src="./img/photo-bridge-mobile@1x.jpg" width="320" height="260" alt="Devil bridge" />
         </li>
-        <li class="advantages__item">
-          <div class="advantages__card advantages__card--square card card--secondary">
-            <p class="card__title card__title--advantage">Небольшая площадь</p>
-            <p class="card__number card__number--secondary">№3</p>
-            <p class="card__text">Все интересные места находятся очень близко</p>
-          </div>
-        </li>
-        <li class="advantages__item">
-          <div class="advantages__card advantages__card--road card card--secondary">
-            <p class="card__title card__title--advantage">Красивая дорога</p>
-            <p class="card__number card__number--secondary">№4</p>
-            <p class="card__text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-          </div>
-        </li>
-        <li class="advantages__item">
-          <div class="advantages__card advantages__card--tourists card card--secondary">
-            <p class="card__title card__title--advantage">Мало туристов</p>
-            <p class="card__number card__number--secondary">№5</p>
-            <p class="card__text">Большинство едет в Гранд Каньон и толпится там</p>
-          </div>
-        </li>
+        <div class="advantages__group">
+          <li class="advantages__item">
+            <div class="advantages__card advantages__card--square card card--secondary">
+              <p class="card__title card__title--advantage">Небольшая площадь</p>
+              <p class="card__number card__number--secondary">№3</p>
+              <p class="card__text">Все интересные места находятся очень близко</p>
+            </div>
+          </li>
+          <li class="advantages__item">
+            <div class="advantages__card advantages__card--road card card--secondary">
+              <p class="card__title card__title--advantage">Красивая дорога</p>
+              <p class="card__number card__number--secondary">№4</p>
+              <p class="card__text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+            </div>
+          </li>
+          <li class="advantages__item">
+            <div class="advantages__card advantages__card--tourists card card--secondary">
+              <p class="card__title card__title--advantage">Мало туристов</p>
+              <p class="card__number card__number--secondary">№5</p>
+              <p class="card__text">Большинство едет в Гранд Каньон и толпится там</p>
+            </div>
+          </li>
+        </div>
       </ul>
     </section>
 
@@ -162,7 +163,7 @@
       <span class="footer__text">Разработано</span>
       <img class="footer__developer-icon" src="./img/logo-htmlacademy.svg" width="27" height="34" alt="HTML Academy">
     </div>
-  </footer> -->
+  </footer>
 </body>
 
 </html>
