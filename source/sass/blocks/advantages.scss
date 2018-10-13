@@ -13,6 +13,8 @@
 .advantages__group {
   @media (min-width: $width-tablet) {
     display: flex;
+    justify-content: space-between;
+    background-color: #eeeeee;
   }
 }
 

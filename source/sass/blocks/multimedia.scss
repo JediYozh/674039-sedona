@@ -1,6 +1,51 @@
+.multimedia__list {
+  @include reset-list;
+
+  @media (min-width: $width-tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  @media (min-width: $width-desktop) {
+    padding: 0;
+  }
+}
+
 .multimedia__item {
   border-bottom: 1px solid #e5e5e5;
   position: relative;
+
+  @media (min-width: $width-tablet) {
+    flex-grow: 1;
+    flex-basis: 50%;
+    margin: 0;
+    border: none;
+
+    &:first-child {
+      flex-basis: 100%;
+
+      img {
+        height: 400px;
+      }
+    }
+
+    &:last-child {
+      flex-grow: 0;
+      flex-basis: 50%;
+    }
+  }
+
+  @media (min-width: $width-desktop) {
+    flex-basis: 400px;
+    margin: 0;
+    flex-grow: 0;
+
+    &:last-child {
+      flex-basis: 400px;
+    }
+  }
 }
 
 .multimedia__card {
@@ -18,44 +63,107 @@
   &--video {
     padding: 39px 41px 40px 44px;
   }
-}
 
-.multimedia__list {
-  @include reset-list;
+  @media (min-width: $width-tablet) {
+    &--main {
+      padding: 76px 170px 75px 170px;
+    }
+
+    &--photo {
+      padding: 0;
+    }
+
+    &--video {
+      padding: 68px 177px 78px 176px;
+    }
+  }
+
+  @media (min-width: $width-desktop) {
+    &--main {
+      padding: 113px 387px 77px 385px;
+    }
+
+    &--video {
+      padding: 72px 393px 76px 392px;
+    }
+  }
 }
 
 .multimedia__photo {
   margin-bottom: 22px;
+
+  @media (min-width: $width-tablet) {
+    width: 100%;
+    height: 267px;
+    margin: 0;
+  }
 }
 
 .multimedia__info {
   width: 100%;
   position: relative;
+  font-weight: normal;
+  line-height: 1.71;
+  text-align: left;
+
+  @media (min-width: $width-tablet) {
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &--road {
+      background-color: #eaeaea;
+    }
+  }
+
+  @media (min-width: $width-desktop) {
+    position: absolute;
+    margin-top: -95px;
+    background-color: #000000;
+    opacity: 0.3;
+    color: #ffffff;
+  }
+}
+
+.multimedia__authorship {
+  @media (min-width: $width-tablet) {
+    margin: 22px auto 21px 20px;
+  }
 }
 
 .multimedia__photo-name {
   @include text-style;
   font-size: $font-size-small;
   font-weight: bold;
-  line-height: 1.71;
   text-align: left;
   margin-top: 0;
   margin-bottom: 8px;
   text-transform: uppercase;
+
+  @media (min-width: $width-tablet) {
+    margin: 0;
+  }
 }
 
 .multimedia__author-name {
   @include text-style;
   font-size: $font-size-small;
-  line-height: 1.71;
   text-align: left;
   margin-top: 0;
-  font-weight: normal;
   margin-bottom: 11px;
+
+  @media (min-width: $width-tablet) {
+    margin: 0;
+  }
 }
 
 .multimedia__likes {
-  display: inline;
+  display: flex;
+
+  @media (min-width: $width-tablet) {
+    margin-right: 30px;
+  }
 }
 
 .multimedia__likes-counter {
@@ -63,8 +171,6 @@
   font-size: $font-size-small;
   font-weight: bold;
   line-height: 1.71;
-  text-align: left;
-  vertical-align: bottom;
 }
 
 .multimedia__like-button {
@@ -72,6 +178,5 @@
   height: 23px;
   width: 21px;
   border: none;
-  vertical-align: top;
   margin-right: 14px;
 }

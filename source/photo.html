@@ -43,7 +43,7 @@
 
     <section class="multimedia">
       <div class="multimedia__card multimedia__card--main card">
-        <h1 class="card__title">Фото и Видео</h1>
+        <h1 class="card__title card__title--huge">Фото и Видео</h1>
         <p class="card__text card__text--large">Не можете решиться на путешествие из-за курса? Фотографии помогут вам
           забыть о политике и экономике.</p>
       </div>
@@ -52,8 +52,10 @@
           <figure class="multimedia__card multimedia__card--photo">
             <img class="multimedia__photo" src="img/photo-sunset-mobile@1x.jpg" width="280" height="280" alt="Road">
             <figcaption class="multimedia__info">
-              <p class="multimedia__photo-name">Народные просторы</p>
-              <p class="multimedia__author-name">Автор фото: Борис</p>
+              <div class="multimedia__authorship">
+                <p class="multimedia__photo-name">Народные просторы</p>
+                <p class="multimedia__author-name">Автор фото: Борис</p>
+              </div>
               <div class="multimedia__likes">
                 <button class="multimedia__like-button" type="button">
                   <span class="visually-hidden">Поставь лайк</span>
@@ -68,8 +70,10 @@
           <figure class="multimedia__card multimedia__card--photo">
             <img class="multimedia__photo" src="img/photo-cactus-mobile@1x.jpg" width="280" height="280" alt="Some bush">
             <figcaption class="multimedia__info">
-              <p class="multimedia__photo-name">Местная растительность</p>
-              <p class="multimedia__author-name">Автор фото: Сергей</p>
+              <div class="multimedia__authorship">
+                <p class="multimedia__photo-name">Местная растительность</p>
+                <p class="multimedia__author-name">Автор фото: Сергей</p>
+              </div>
               <div class="multimedia__likes">
                 <button class="multimedia__like-button" type="button">
                   <span class="visually-hidden">Поставь лайк</span>
@@ -83,9 +87,11 @@
         <li class="multimedia__item">
           <figure class="multimedia__card multimedia__card--photo">
             <img class="multimedia__photo" src="img/photo-roads-mobile@1x.jpg" width="280" height="280" alt="Forest">
-            <figcaption class="multimedia__info">
-              <p class="multimedia__photo-name">Дорога на Север</p>
-              <p class="multimedia__author-name">Автор фото: Петр</p>
+            <figcaption class="multimedia__info multimedia__info--road">
+              <div class="multimedia__authorship">
+                <p class="multimedia__photo-name">Дорога на Север</p>
+                <p class="multimedia__author-name">Автор фото: Петр</p>
+              </div>
               <div class="multimedia__likes">
                 <button class="multimedia__like-button" type="button">
                   <span class="visually-hidden">Поставь лайк</span>
@@ -101,8 +107,10 @@
             <img class="multimedia__photo" src="img/photo-bridge-mobile@1x.jpg" width="280" height="280" alt="Devil
             bridge">
             <figcaption class="multimedia__info">
-              <p class="multimedia__photo-name">Мост дьявола</p>
-              <p class="multimedia__author-name">Автор фото: Антон</p>
+              <div class="multimedia__authorship">
+                <p class="multimedia__photo-name">Мост дьявола</p>
+                <p class="multimedia__author-name">Автор фото: Антон</p>
+              </div>
               <div class="multimedia__likes">
                 <button class="multimedia__like-button" type="button">
                   <span class="visually-hidden">Поставь лайк</span>
@@ -116,7 +124,7 @@
       </ul>
 
       <div class="multimedia__card multimedia__card--video card">
-        <h2 class="card__title card__title--video">Вы еще сомневаетесь?</h2>
+        <h2 class="card__title card__title--huge">Вы еще сомневаетесь?</h2>
         <p class="card__text card__text--large">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали
           в
           очередной раз!</p>
@@ -124,12 +132,13 @@
 
       <div class="multimedia__video video">
         <div class="video__player-wrapper">
-          <img class="video__player-photo" src="img/video-mobile@1x.jpg" width="321" height="201" alt="Road">
+          <img class="video__player-photo" src="img/video-mobile@1x.jpg" width="320" height="201" alt="Road">
           <div class="video__slider">
             <input class="video__rewinder" type="range" name="rewinder" id="rewinder">
           </div>
         </div>
         <div class="video__menu">
+          <div class="video__background"></div>
           <button class="video__button video__button--replay" type="button">
             <img class="video__replay-icon" src="img/icon-video-replay.svg" width="16" height="20" alt="Replay">
           </button>

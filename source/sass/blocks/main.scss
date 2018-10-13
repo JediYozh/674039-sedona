@@ -1,8 +1,18 @@
 .main__banner {
-  background: url("../../img/bg-back-mobile@1x.jpg") no-repeat 50% 50%;
+  background: url("../../img/bg-back-mobile@1x.jpg");
+  background-position: center;
+  background-size: cover;
   text-align: center;
   height: 158px;
   line-height: 158px;
+
+  @media (min-width: $width-tablet) {
+    background: url("../../img/bg-back-tablet@1x.jpg");
+    background-position: center;
+    background-size: cover;
+
+    height: 196px;
+  }
 }
 
 .main__banner-photo {
