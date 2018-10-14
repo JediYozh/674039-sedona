@@ -43,7 +43,7 @@
 
     <section class="review">
       <div class="review__card card">
-        <h2 class="card__title">Оставьте свой отзыв</h2>
+        <h2 class="card__title card__title--huge">Оставьте свой отзыв</h2>
         <p class="card__text card__text--large">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о
           посещенных вами достопримечательностях</p>
       </div>
@@ -54,42 +54,40 @@
       <form class="page-form__review form" action="https://echo.htmlacademy.ru" method="post">
         <div class="form__item-wrapper">
           <div class="form__item">
-            <h2 class="form__item-title">Представьтесь:</h2>
-            <div class="form__group">
+            <h2 class="form__item-title form__item-title--naming">Представьтесь:</h2>
+            <div class="form__group form__group--naming">
               <label class="form__label form__label--firstname" for="firstname">Имя*:</label>
               <input class="form__field form__field--naming form__field--firstname" type="text" name="firstname" id="firstname"
                 placeholder="Петр">
             </div>
-            <div class="form__group">
+            <div class="form__group form__group--naming">
               <label class="form__label form__label--lastname" for="lastname">Фамилия*:</label>
               <input class="form__field form__field--naming" type="text" name="lastname" id="lastname" placeholder="Иванов">
             </div>
-            <div class="form__group">
+            <div class="form__group form__group--naming">
               <label class="form__label form__label--patronymic" for="patronymic">Отчество:</label>
               <input class="form__field form__field--naming" type="text" name="patronymic" id="patronymic" placeholder="Александрович">
             </div>
           </div>
         </div>
-        <div class="form__item-wrapper">
+        <div class="form__item-wrapper form__item-wrapper--contact">
           <div class="form__item">
             <h2 class="form__item-title">Контактная информация:</h2>
-            <div class="form__group">
-              <label class="form__label form__label--contact" for="phone">Контактный телефон*:</label>
-              <div class="form__group-fields">
+            <div class="form__group-wrapper">
+              <div class="form__group form__group--contact">
+                <label class="form__label form__label--contact" for="phone">Контактный телефон*:</label>
                 <input class="form__field form__field--contact" type="tel" name="phone" id="phone" placeholder="Введите телефон">
               </div>
-            </div>
-            <div class="form__group">
-              <label class="form__label form__label--contact form__label--email" for="email">Электронная почта*:</label>
-              <div class="form__group-fields">
+              <div class="form__group form__group--contact">
+                <label class="form__label form__label--contact form__label--email" for="email">Электронная почта*:</label>
                 <input class="form__field form__field--contact" type="email" name="email" id="email" placeholder="Введите e-mail">
               </div>
             </div>
           </div>
         </div>
-        <div class="form__item-wrapper">
+        <div class="form__item-wrapper form__item-wrapper--feedback">
           <div class="form__item">
-            <h2 class="form__item-title">Ваше общее впечатление:</h2>
+            <h2 class="form__item-title form__item-title--feedback">Ваше общее впечатление:</h2>
             <div class="form__group form__group--radio">
               <input class="form__field form__field--radio" type="radio" name="feedback" id="positive">
               <label class="form__label form__label--radio" for="positive">Скорее положительное</label>
@@ -104,9 +102,9 @@
             </div>
           </div>
         </div>
-        <div class="form__item-wrapper">
-          <div class="form__item">
-            <h2 class="form__item-title">Посещенные достопримечательности:</h2>
+        <div class="form__item-wrapper form__item-wrapper--places">
+          <h2 class="form__item-title form__item-title--places">Посещенные достопримечательности:</h2>
+          <div class="form__item form__item--places">
             <div class="form__group form__group--checkbox">
               <input class="form__field form__field--checkbox" type="checkbox" name="sight" id="bridge" checked>
               <label class="form__label form__label--checkbox" for="bridge">Мост Дьявола</label>
@@ -125,10 +123,10 @@
             </div>
           </div>
         </div>
-        <div class="form__item-wrapper">
+        <div class="form__item-wrapper form__item-wrapper--textarea">
           <div class="form__item">
             <h2 class="form__item-title">Опишите свои эмоции:</h2>
-            <div class="form__group">
+            <div class="form__group form__group--text-area">
               <textarea class="form__field form__field--about-area" name="about" id="about" placeholder="Опишите подробно все свои восторги"></textarea>
             </div>
           </div>
