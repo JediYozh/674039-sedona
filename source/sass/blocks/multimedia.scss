@@ -22,28 +22,22 @@
     flex-basis: 50%;
     margin: 0;
     border: none;
-
-    &:first-child {
-      flex-basis: 100%;
-
-      img {
-        height: 400px;
-      }
-    }
-
-    &:last-child {
-      flex-grow: 0;
-      flex-basis: 50%;
-    }
   }
 
   @media (min-width: $width-desktop) {
     flex-basis: 400px;
-    margin: 0;
     flex-grow: 0;
+  }
 
-    &:last-child {
-      flex-basis: 400px;
+  &--first {
+    @media (min-width: $width-tablet) {
+      flex-basis: 100%;
+    }
+  }
+
+  &--last {
+    @media (min-width: $width-tablet) {
+      flex-grow: 0;
     }
   }
 }
@@ -54,36 +48,32 @@
 
   &--main {
     padding: 44px 24px 33px 27px;
+
+    @media (min-width: $width-tablet) {
+      padding: 76px 170px 75px 170px;
+    }
+
+    @media (min-width: $width-desktop) {
+      padding: 113px 387px 77px 385px;
+    }
   }
 
   &--photo {
     padding: 22px 20px 23px 20px;
+
+    @media (min-width: $width-tablet) {
+      padding: 0;
+    }
   }
 
   &--video {
     padding: 39px 41px 40px 44px;
-  }
 
-  @media (min-width: $width-tablet) {
-    &--main {
-      padding: 76px 170px 75px 170px;
-    }
-
-    &--photo {
-      padding: 0;
-    }
-
-    &--video {
+    @media (min-width: $width-tablet) {
       padding: 68px 177px 78px 176px;
     }
-  }
 
-  @media (min-width: $width-desktop) {
-    &--main {
-      padding: 113px 387px 77px 385px;
-    }
-
-    &--video {
+    @media (min-width: $width-desktop) {
       padding: 72px 393px 76px 392px;
     }
   }
@@ -97,6 +87,12 @@
     height: 267px;
     margin: 0;
   }
+
+  &--first {
+    @media (min-width: $width-tablet) {
+      height: 400px;
+    }
+  }
 }
 
 .multimedia__info {
@@ -107,22 +103,24 @@
   text-align: left;
 
   @media (min-width: $width-tablet) {
-    background-color: #f2f2f2;
+    background-color: $color-background-light;
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-    &--road {
-      background-color: #eaeaea;
-    }
   }
 
   @media (min-width: $width-desktop) {
     position: absolute;
     margin-top: -95px;
-    background-color: #000000;
+    background-color: $color-dark;
     opacity: 0.3;
-    color: #ffffff;
+    color: $color-primary;
+  }
+
+  &--road {
+    @media (min-width: $width-tablet) {
+      background-color: $color-special-light;
+    }
   }
 }
 

@@ -1,16 +1,15 @@
 .video {
   position: relative;
-}
-
-.video__player-wrapper {
-  position: relative;
-  height: 201px;
 
   @media (min-width: $width-tablet) {
-    height: 499px;
     padding-left: 60px;
     padding-right: 60px;
     margin-bottom: 60px;
+  }
+
+  @media (min-width: $width-desktop) {
+    padding-left: 200px;
+    padding-right: 200px;
   }
 }
 
@@ -21,73 +20,86 @@
   }
 }
 
-.video__slider {
-  height: 45px;
-  width: 280px;
-  opacity: 0.6;
-  position: absolute;
-  bottom: 0;
-  left: 20px;
-  background-color: #000000;
-
-  @media (min-width: $width-tablet) {
-    height: 93px;
-    width: 648px;
-    left: 60px;
-  }
-}
-
 .video__menu {
-  position: relative;
-  border: 2px solid red;
-  display: none;
-}
-
-.video__background {
-  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: -49px;
+  margin-left: auto;
+  margin-right: auto;
   width: 280px;
-  height: 66px;
-  background-color: #f2f2f2;
-  margin: 0 20px 49px 20px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $color-background-light;
 
   @media (min-width: $width-tablet) {
-    display: none;
+    width: 648px;
+    margin-top: -95px;
+    height: 93px;
+    opacity: 0.6;
+    background-color: $color-dark;
   }
+
+  @media (min-width: $width-desktop) {
+    width: 800px;
+  }
+}
+
+.video__button-group {
+  display: flex;
+  position: absolute;
+  height: 55px;
+  width: 280px;
+  justify-content: space-between;
+  background-color: $color-background-light;
 }
 
 .video__button {
-  padding: 0;
   border: none;
-  position: absolute;
+  padding: 10px;
 
   &--replay {
-    top: 22px;
-    left: 45px;
+    padding-left: 25px;
+    margin-right: auto;
+
+    @media (min-width: $width-tablet) {
+      order: -1;
+      margin: 0;
+      padding: 0;
+      padding-left: 35px;
+    }
   }
 
   &--subtitles {
-    right: 94px;
-    top: 23px;
+    padding-right: 31px;
   }
 
   &--fullscreen {
-    top: 23px;
-    right: 43px;
+    padding-right: 23px;
+
+    @media (min-width: $width-tablet) {
+      padding-rigth: 41px;
+    }
+  }
+
+  &--transparant {
+    @media (min-width: $width-tablet) {
+      opacity: 0.6;
+      background-color: $color-dark;
+    }
   }
 }
 
-.video__rewinder {
+.video__slider {
   width: 235px;
   height: 3px;
   border: none;
-  opacity: 0.7;
   outline: none;
-  background-color: #000000;
-  margin: 22px 23px 20px 22px;
-  padding: 0;
+  padding: 22px 23px 20px 23px;
+  margin: 0;
+  opacity: 0.6;
+  background-color: $color-dark;
 
   @media (min-width: $width-tablet) {
     width: 389px;
-    margin: 45px 97px;
   }
 }

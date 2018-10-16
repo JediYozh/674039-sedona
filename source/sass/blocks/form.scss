@@ -11,23 +11,21 @@
 }
 
 .form__item {
-  @media (min-width: $width-tablet) {
-    &--places {
+  &--places {
+    @media (min-width: $width-tablet) {
       display: flex;
       flex-direction: column;
       flex-wrap: wrap;
-      height: 150px;
+      min-height: 150px;
       align-items: center;
     }
-  }
 
-  @media (min-width: $width-desktop) {
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
+    @media (min-width: $width-desktop) {
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: center;
 
-    &--places {
-      height: 100px;
+      min-height: 100px;
     }
   }
 }
@@ -39,20 +37,28 @@
   @media (min-width: $width-tablet) {
     border: none;
     margin-bottom: 60px;
+  }
 
-    &--feedback {
+  &--feedback {
+    @media (min-width: $width-tablet) {
       order: -1;
     }
+  }
 
-    &--contact {
+  &--contact {
+    @media (min-width: $width-tablet) {
       flex-basis: 100%;
     }
+  }
 
-    &--places {
+  &--places {
+    @media (min-width: $width-tablet) {
       flex-basis: 100%;
     }
+  }
 
-    &--textarea {
+  &--textarea {
+    @media (min-width: $width-tablet) {
       text-align: center;
       flex-basis: 100%;
     }
@@ -62,6 +68,7 @@
 .form__item-title {
   @include text-style;
   margin-top: 24px;
+  text-align: center;
   margin-bottom: 0;
   font-size: $font-size-medium;
   font-weight: bold;
@@ -73,20 +80,24 @@
     line-height: 1.24;
     margin-top: 0;
     margin-bottom: 60px;
+  }
 
-    &--feedback {
-      text-align: left;
-      margin-bottom: 60px;
-    }
-
-    &--naming {
+  &--feedback {
+    @media (min-width: $width-tablet) {
       text-align: left;
       margin-bottom: 60px;
     }
   }
 
-  @media (min-width: $width-desktop) {
-    &--places {
+  &--naming {
+    @media (min-width: $width-tablet) {
+      text-align: left;
+      margin-bottom: 60px;
+    }
+  }
+
+  &--places {
+    @media (min-width: $width-desktop) {
       margin-bottom: 0;
     }
   }
@@ -99,6 +110,11 @@
   &--radio {
     margin-top: 32px;
     height: 46px;
+
+    @media (min-width: $width-tablet) {
+      margin-top: 25px;
+      height: 60px;
+    }
   }
 
   &--checkbox {
@@ -113,23 +129,14 @@
 
   &--contact {
     flex-direction: column;
-  }
 
-  &--text-area {
-    flex-direction: column;
-  }
-
-  @media (min-width: $width-tablet) {
-    &--radio {
-      margin-top: 25px;
-      height: 60px;
-    }
-  }
-
-  @media (min-width: $width-desktop) {
-    &--contact {
+    @media (min-width: $width-desktop) {
       flex-direction: row;
     }
+  }
+
+  &--about-area {
+    flex-direction: column;
   }
 }
 
@@ -172,16 +179,20 @@
     line-height: 1.44;
   }
 
-  @media (min-width: $width-tablet) {
-    &--firstname {
+  &--firstname {
+    @media (min-width: $width-tablet) {
       margin-right: 14px;
     }
+  }
 
-    &--lastname {
+  &--lastname {
+    @media (min-width: $width-tablet) {
       margin-right: 14px;
     }
+  }
 
-    &--patronymic {
+  &--patronymic {
+    @media (min-width: $width-tablet) {
       margin-right: 14px;
     }
   }
@@ -189,11 +200,15 @@
 
 .form__field {
   height: 58px;
-  background-color: #f2f2f2;
+  background-color: $color-background-light;
   border: none;
 
   &--naming {
     width: 192px;
+
+    @media (min-width: $width-tablet) {
+      margin: 0;
+    }
   }
 
   &--firstname {
@@ -202,6 +217,14 @@
 
   &--contact {
     width: 280px;
+
+    @media (min-width: $width-tablet) {
+      width: 100%;
+    }
+
+    @media (min-width: $width-desktop) {
+      width: 316px;
+    }
   }
 
   &--radio {
@@ -217,27 +240,11 @@
     height: 160px;
     margin-top: 21px;
     margin-bottom: 51px;
-  }
 
-  @media (min-width: $width-tablet) {
-    &--contact {
-      width: 100%;
-    }
-
-    &--naming {
-      margin: 0;
-    }
-
-    &--about-area {
+    @media (min-width: $width-tablet) {
       width: 100%;
       margin-top: 0;
       margin-bottom: 0;
-    }
-  }
-
-  @media (min-width: $width-desktop) {
-    &--contact {
-      width: 316px;
     }
   }
 }

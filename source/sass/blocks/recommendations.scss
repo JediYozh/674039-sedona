@@ -21,6 +21,14 @@
   margin-left: 22px;
   display: table;
 
+  @media (min-width: $width-tablet) {
+    padding-top: 60px;
+    margin: 0 0 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   &--souvenirs {
     display: table;
     margin-top: 22px;
@@ -32,14 +40,6 @@
     margin-top: 27px;
     margin-left: 18px;
   }
-
-  @media (min-width: $width-tablet) {
-    padding-top: 60px;
-    margin: 0 0 20px 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
 }
 
 .recommendations__icon {
@@ -50,20 +50,26 @@
   @media (min-width: $width-tablet) {
     margin-bottom: 33px;
     margin-right: 0;
+  }
 
-    &--housting {
+  &--housting {
+    @media (min-width: $width-tablet) {
       height: 72px;
       width: 72px;
     }
+  }
 
-    &--souvenirs {
+  &--souvenirs {
+    @media (min-width: $width-tablet) {
       height: 68px;
       width: 77px;
     }
+  }
 
-    &--food {
-      height: 75px;
-      width: 64px;
+  &--food {
+    @media (min-width: $width-tablet) {
+      height: 68px;
+      width: 77px;
     }
   }
 }
@@ -93,10 +99,6 @@
   text-align: left;
   color: $color-secondary-text;
 
-  &--last {
-    margin: 23px auto 42px 69px;
-  }
-
   @media (min-width: $width-tablet) {
     margin: 0;
     text-align: center;
@@ -107,5 +109,9 @@
   @media (min-width: $width-desktop) {
     width: 252px;
     padding-bottom: 85px;
+  }
+
+  &--last {
+    margin: 23px auto 42px 69px;
   }
 }

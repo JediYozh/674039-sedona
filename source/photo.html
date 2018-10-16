@@ -20,6 +20,12 @@
         <li class="menu-list__item">
           <a class="menu-list__link">Фото и видео</a>
         </li>
+        <li class="menu-list__logo">
+          <a class="menu-list__logo-link">
+            <img class="menu-list__logo-image" src="./img/logo-sedona-mobile.svg" width="102" height="83" alt="City of Sedona">
+          </a>
+          <button class="menu-list__button toggle-button" type="button"></button>
+        </li>
         <li class="menu-list__item">
           <a class="menu-list__link" href="form.html">Форма отзыва</a>
         </li>
@@ -28,12 +34,6 @@
         </li>
       </ul>
     </nav>
-    <div class="header__wrapper">
-      <a class="header__logo">
-        <img class="header__logo-image" src="./img/logo-sedona-mobile.svg" width="102" height="83" alt="City of Sedona">
-      </a>
-      <button class="header__button toggle-button" type="button"></button>
-    </div>
   </header>
 
   <main class="main">
@@ -48,9 +48,10 @@
           забыть о политике и экономике.</p>
       </div>
       <ul class="multimedia__list">
-        <li class="multimedia__item">
+        <li class="multimedia__item multimedia__item--first">
           <figure class="multimedia__card multimedia__card--photo">
-            <img class="multimedia__photo" src="img/photo-sunset-mobile@1x.jpg" width="280" height="280" alt="Road">
+            <img class="multimedia__photo multimedia__photo--first" src="img/photo-sunset-mobile@1x.jpg" width="280"
+              height="280" alt="Road">
             <figcaption class="multimedia__info">
               <div class="multimedia__authorship">
                 <p class="multimedia__photo-name">Народные просторы</p>
@@ -102,7 +103,7 @@
             </figcaption>
           </figure>
         </li>
-        <li class="multimedia__item">
+        <li class="multimedia__item multimedia__item--last">
           <figure class="multimedia__card multimedia__card--photo">
             <img class="multimedia__photo" src="img/photo-bridge-mobile@1x.jpg" width="280" height="280" alt="Devil
             bridge">
@@ -131,21 +132,16 @@
       </div>
 
       <div class="multimedia__video video">
-        <div class="video__player-wrapper">
-          <img class="video__player-photo" src="img/video-mobile@1x.jpg" width="320" height="201" alt="Road">
-          <div class="video__slider">
-            <input class="video__rewinder" type="range" name="rewinder" id="rewinder">
-          </div>
-        </div>
+        <img class="video__player-photo" src="img/video-mobile@1x.jpg" width="320" height="201" alt="Road">
         <div class="video__menu">
-          <div class="video__background"></div>
-          <button class="video__button video__button--replay" type="button">
+          <input class="video__slider" type="range" name="rewinder" id="rewinder">
+          <button class="video__button video__button--replay video__button--transparant" type="button">
             <img class="video__replay-icon" src="img/icon-video-replay.svg" width="16" height="20" alt="Replay">
           </button>
-          <button class="video__button video__button--subtitles" type="button">
-            <img class="video__subtitles-icon" src="img//icon-video-subtitles.svg" width="32" height="20" alt="Subtitles">
+          <button class="video__button video__button--subtitles video__button--transparant" type="button">
+            <img class="video__subtitles-icon " src="img//icon-video-subtitles.svg" width="32" height="20" alt="Subtitles">
           </button>
-          <button class="video__button video__button--fullscreen" type="button">
+          <button class="video__button video__button--fullscreen video__button--transparant" type="button">
             <img class="video__fullscreen-icon" src="img/icon-video-fullscreen.svg" width="20" height="20" alt="Full screen">
           </button>
         </div>
@@ -159,17 +155,17 @@
       <ul class="social__list">
         <li class="social__item">
           <a class="social__link" href="">
-            <img class="social__icon social__icon--tw" src="./img/icon-twitter.svg" width="18" height="14" />
+            <img class="social__icon social__icon--tw" src="./img/icon-twitter.svg" width="18" height="14" alt="Twitter" />
           </a>
         </li>
         <li class="social__item">
           <a class="social__link " href="">
-            <img class="social__icon social__icon--fc" src="./img/icon-facebook.svg" width="9" height="18" />
+            <img class="social__icon social__icon--fc" src="./img/icon-facebook.svg" width="9" height="18" alt="Facebook" />
           </a>
         </li>
         <li class="social__item">
           <a class="social__link" href="">
-            <img class="social__icon social__icon--yt" src="./img/icon-youtube.svg" width="20" height="14" />
+            <img class="social__icon social__icon--yt" src="./img/icon-youtube.svg" width="20" height="14" alt="Youtube" />
           </a>
         </li>
       </ul>

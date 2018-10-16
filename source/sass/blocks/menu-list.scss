@@ -1,26 +1,14 @@
 .menu-list {
   @include reset-list;
-  text-align: center;
 
   @media (min-width: $width-tablet) {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-
-    :nth-child(2) {
-      margin-right: 156px;
-    }
-  }
-
-  @media (min-width: $width-desktop) {
-    :nth-child(2) {
-      margin-right: 244px;
-    }
   }
 }
 
 .menu-list__item {
-  height: 55px;
   width: 100%;
   display: table;
   background-color: $color-inverted;
@@ -39,18 +27,49 @@
 
 .menu-list__link {
   @include text-style;
+  padding-top: 10px;
+  padding-bottom: 10px;
   display: table-cell;
   text-decoration: none;
-  vertical-align: middle;
-  color: #ffffff;
+  color: $color-primary;
   font-size: $font-size-medium;
   font-weight: bold;
   line-height: 2.22;
 
   @media (min-width: $width-tablet) {
-    color: #000000;
-    background-color: #ffffff;
+    color: $color-dark;
+    background-color: $color-primary;
     line-height: 1.86;
     font-size: $font-size-small;
+    padding-top: 18px;
+    padding-bottom: 18px;
   }
+}
+
+.menu-list__logo {
+  min-height: 56px;
+  position: relative;
+  order: 3;
+
+  @media (min-width: $width-tablet) {
+    order: initial;
+    width: 102px;
+  }
+}
+
+.menu-list__logo-link {
+  display: flex;
+  justify-content: center;
+}
+
+.menu-list__logo-image {
+  position: absolute;
+}
+
+.menu-list__button {
+  background: url("../../img/icon-menu.svg") no-repeat 50% 50%;
+  width: 23px;
+  height: 21px;
+  border: none;
+  top: 24px;
 }
