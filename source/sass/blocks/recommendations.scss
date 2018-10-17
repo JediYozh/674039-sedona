@@ -1,12 +1,33 @@
 .recommendations__list {
   @include reset-list;
   text-transform: uppercase;
+
+  @media (min-width: $width-tablet) {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+.recommendations__item {
+  @media (min-width: $width-tablet) {
+    &--souvenirs {
+      order: 2;
+    }
+  }
 }
 
 .recommendations__title-wrapper {
   margin-top: 26px;
   margin-left: 22px;
   display: table;
+
+  @media (min-width: $width-tablet) {
+    padding-top: 60px;
+    margin: 0 0 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
   &--souvenirs {
     display: table;
@@ -25,6 +46,32 @@
   position: relative;
   display: inline-block;
   margin-right: 10px;
+
+  @media (min-width: $width-tablet) {
+    margin-bottom: 33px;
+    margin-right: 0;
+  }
+
+  &--housting {
+    @media (min-width: $width-tablet) {
+      height: 72px;
+      width: 72px;
+    }
+  }
+
+  &--souvenirs {
+    @media (min-width: $width-tablet) {
+      height: 68px;
+      width: 77px;
+    }
+  }
+
+  &--food {
+    @media (min-width: $width-tablet) {
+      height: 68px;
+      width: 77px;
+    }
+  }
 }
 
 .recommendations__title {
@@ -34,6 +81,12 @@
   font-size: $font-size-medium;
   font-weight: bold;
   line-height: 1.44;
+
+  @media (min-width: $width-tablet) {
+    margin: 0;
+    line-height: 1.24;
+    font-size: $font-size-big;
+  }
 }
 
 .recommendations__text {
@@ -45,6 +98,18 @@
   line-height: 1.5;
   text-align: left;
   color: $color-secondary-text;
+
+  @media (min-width: $width-tablet) {
+    margin: 0;
+    text-align: center;
+    padding-bottom: 66px;
+    width: 155px;
+  }
+
+  @media (min-width: $width-desktop) {
+    width: 252px;
+    padding-bottom: 85px;
+  }
 
   &--last {
     margin: 23px auto 42px 69px;

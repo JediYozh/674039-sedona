@@ -2,7 +2,6 @@
 @import "./utils/variables.scss";
 @import "./utils/mixins.scss";
 @import "./blocks/visually-hidden.scss";
-@import "./blocks/header.scss";
 @import "./blocks/main-nav.scss";
 @import "./blocks/menu-list.scss";
 @import "./blocks/welcome.scss";
@@ -20,10 +19,11 @@
 @import "./blocks/review.scss";
 @import "./blocks/button.scss";
 @import "./blocks/toogle-button.scss";
+@import "./blocks/page-form.scss";
 
 html,
 body {
   @include reset-indents;
-  width: 320px;
+  min-width: 320px;
   font-family: $font-family-primary;
 }

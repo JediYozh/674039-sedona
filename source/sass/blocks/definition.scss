@@ -1,3 +1,12 @@
 .definition__card {
   padding: 43px 33px 30px 32px;
+
+  @media (min-width: $width-tablet) {
+    padding: 51px 139px 55px 139px;
+  }
+
+  @media (min-width: $width-desktop) {
+    padding-left: 355px;
+    padding-right: 355px;
+  }
 }

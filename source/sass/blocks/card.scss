@@ -16,15 +16,11 @@
   font-weight: bold;
   line-height: 1.44;
   text-transform: uppercase;
-  color: $color-title;
+  color: $color-dark;
   margin-bottom: 30px;
 
   &--inverted {
-    color: #ffffff;
-  }
-
-  &--advantage {
-    margin-bottom: 14px;
+    color: $color-primary;
   }
 
   &--hotel {
@@ -36,6 +32,28 @@
 
   &--video {
     margin-bottom: 32px;
+  }
+
+  &--advantage {
+    margin-bottom: 14px;
+
+    @media (min-width: $width-tablet) {
+      font-size: $font-size-big;
+      line-height: 1.24;
+    }
+  }
+
+  &--definition {
+    @media (min-width: $width-tablet) {
+      font-size: $font-size-big;
+    }
+  }
+
+  &--huge {
+    @media (min-width: $width-tablet) {
+      font-size: $font-size-huge;
+      line-height: 0.87;
+    }
   }
 }
 
@@ -49,7 +67,7 @@
   text-transform: uppercase;
 
   &--inverted {
-    color: #ffffff;
+    color: $color-primary;
   }
 
   &--definition {
@@ -62,6 +80,11 @@
 
   &--hotel {
     margin-bottom: 30px;
+
+    @media (min-width: $width-tablet) {
+      margin-bottom: 47px;
+      width: 434px;
+    }
   }
 }
 
@@ -74,7 +97,7 @@
   text-transform: uppercase;
 
   &--inverted {
-    color: #ffffff;
+    color: $color-primary;
   }
 
   &--secondary {

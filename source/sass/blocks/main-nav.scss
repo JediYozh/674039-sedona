@@ -9,3 +9,8 @@
   height: 22px;
   border: none;
 }
+
+.main-nav__list {
+  display: flex;
+  flex-direction: column;
+}

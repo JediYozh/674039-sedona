@@ -1,7 +1,13 @@
 .footer {
-  height: 233px;
   text-align: center;
   text-transform: uppercase;
+
+  @media (min-width: $width-tablet) {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    min-height: 120px;
+  }
 }
 
 .footer__hash {
@@ -9,25 +15,39 @@
   font-size: $font-size-big;
   font-weight: bold;
   line-height: 1.24;
-  color: #000000;
-  margin: 31px 93px 41px 91px;
+  color: $color-dark;
+  padding-top: 31px;
+  margin-bottom: 41px;
   display: inline-block;
+
+  @media (min-width: $width-tablet) {
+    margin: 0;
+    padding: 0;
+  }
 }
 
 .footer__links {
   margin-bottom: 40px;
+
+  @media (min-width: $width-tablet) {
+    margin: 0;
+  }
 }
 
 .footer__developer {
-  display: table;
+  display: flex;
+  justify-content: center;
   overflow: hidden;
   margin: 0 auto 25px;
+
+  @media (min-width: $width-tablet) {
+    margin: 0;
+  }
 }
 
 .footer__text {
   @include text-style;
   vertical-align: middle;
-  display: table-cell;
   font-size: $font-size-small;
   font-weight: normal;
   line-height: 1.86;
@@ -35,5 +55,4 @@
 
 .footer__developer-icon {
   margin-left: 11px;
-  vertical-align: middle;
 }
