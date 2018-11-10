@@ -1,5 +1,6 @@
 .welcome {
-  height: 390px;
+  position: relative;
+  min-height: 389px;
   text-align: center;
   background: url("../../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
@@ -24,4 +25,11 @@
 
 .welcome__banner {
   margin-top: 90px;
+}
+
+.welcome__mask {
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  max-width: 600px;
 }

@@ -50,12 +50,12 @@
   height: 55px;
   width: 280px;
   justify-content: space-between;
-  background-color: $color-background-light;
 }
 
 .video__button {
   border: none;
   padding: 10px;
+  background-color: $color-background-light;
 
   &--replay {
     padding-left: 25px;

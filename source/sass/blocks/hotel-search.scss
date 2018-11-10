@@ -1,5 +1,9 @@
+.hotel-search {
+  background-color: $color-primary;
+}
+
 .hotel-search__card {
-  padding: 33px 20px 49px 20px;
+  padding: 27px 20px 49px 20px;
 
   @media (min-width: $width-tablet) {
     padding: 57px 155px 58px 155px;
@@ -14,9 +18,12 @@
   text-decoration: none;
   text-align: center;
   margin: 0 auto;
-  padding: 17px 47px 19px 47px;
+  padding: 16px 30px 16px 28px;
   color: $color-primary;
   display: block;
+  font-size: $font-size-big;
+  line-height: 1.24;
+  text-transform: uppercase;
 }
 
 .hotel-search__map {

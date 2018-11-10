@@ -1,97 +1,172 @@
 .recommendations__list {
   @include reset-list;
   text-transform: uppercase;
+  width: 320px;
+  margin: 0 auto;
 
   @media (min-width: $width-tablet) {
     display: flex;
     justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding: 56px 0 61px 0;
+  }
+
+  @media (min-width: $width-desktop) {
+    padding-bottom: 82px;
   }
 }
 
 .recommendations__item {
+  margin-top: 22px;
+
   @media (min-width: $width-tablet) {
-    &--souvenirs {
+    margin-top: 0;
+  }
+
+  @media (min-width: $width-desktop) {
+    padding-right: 58px;
+    margin-left: 0;
+  }
+
+  &--hosting {
+    @media (min-width: $width-tablet) {
+      margin-left: 3px;
+    }
+
+    @media (min-width: $width-desktop) {
+      margin-left: 38px;
+    }
+  }
+
+  &--food {
+    margin-top: 18px;
+
+    @media (min-width: $width-tablet) {
+      margin-top: 0;
+      margin-left: 7px;
+    }
+
+    @media (min-width: $width-desktop) {
+      padding-right: 78px;
+    }
+  }
+
+  &--souvenirs {
+    margin-top: 17px;
+
+    @media (min-width: $width-tablet) {
       order: 2;
+      margin-top: 0;
+      margin-left: 4px;
     }
   }
 }
 
 .recommendations__title-wrapper {
-  margin-top: 26px;
   margin-left: 22px;
-  display: table;
+  margin-bottom: 13px;
+  display: flex;
+  align-items: center;
 
   @media (min-width: $width-tablet) {
-    padding-top: 60px;
-    margin: 0 0 20px 0;
-    display: flex;
+    margin: 0;
     flex-direction: column;
-    align-items: center;
+  }
+
+  &--hosting {
+    @media (min-width: $width-tablet) {
+      margin-bottom: 20px;
+    }
   }
 
   &--souvenirs {
-    display: table;
-    margin-top: 22px;
     margin-left: 25px;
+
+    @media (min-width: $width-tablet) {
+      margin-left: 0;
+      margin-bottom: 20px;
+    }
   }
 
   &--food {
-    display: table;
-    margin-top: 27px;
     margin-left: 18px;
+    margin-bottom: 10px;
+
+    @media (min-width: $width-tablet) {
+      margin-top: 6px;
+      margin-left: 0;
+      margin-bottom: 21px;
+    }
   }
 }
 
 .recommendations__icon {
   position: relative;
-  display: inline-block;
-  margin-right: 10px;
+  margin-right: 11px;
 
   @media (min-width: $width-tablet) {
-    margin-bottom: 33px;
-    margin-right: 0;
+    margin: 0;
   }
 
-  &--housting {
+  &--hosting {
     @media (min-width: $width-tablet) {
       height: 72px;
-      width: 72px;
+      width: 75px;
+      margin-bottom: 28px;
+      margin-top: 4px;
     }
   }
 
   &--souvenirs {
+    margin-right: 12px;
+
     @media (min-width: $width-tablet) {
-      height: 68px;
-      width: 77px;
+      height: 75px;
+      width: 64px;
+      margin-right: 0;
+      margin-bottom: 27px;
     }
   }
 
   &--food {
+    padding-top: 6px;
+
     @media (min-width: $width-tablet) {
       height: 68px;
       width: 77px;
+      padding: 0;
+      margin-bottom: 29px;
     }
   }
 }
 
 .recommendations__title {
   @include text-style;
-  display: table-cell;
-  vertical-align: middle;
   font-size: $font-size-medium;
   font-weight: bold;
   line-height: 1.44;
+  margin: 0;
+  padding-top: 6px;
+
+  &--souvenirs {
+    padding-top: 8px;
+  }
+
+  &--food {
+    padding-top: 0;
+  }
 
   @media (min-width: $width-tablet) {
-    margin: 0;
     line-height: 1.24;
     font-size: $font-size-big;
+    padding-top: 0;
   }
 }
 
 .recommendations__text {
   @include text-style;
-  margin: 23px auto 22px 69px;
+  margin: 0 auto 0 70px;
   width: 210px;
   font-size: $font-size-small;
   font-weight: normal;
@@ -102,16 +177,47 @@
   @media (min-width: $width-tablet) {
     margin: 0;
     text-align: center;
-    padding-bottom: 66px;
-    width: 155px;
+    width: 160px;
   }
 
   @media (min-width: $width-desktop) {
     width: 252px;
-    padding-bottom: 85px;
   }
 
-  &--last {
-    margin: 23px auto 42px 69px;
+  &--hosting {
+    @media (min-width: $width-desktop) {
+      width: 252px;
+    }
+  }
+
+  &--souvenirs {
+    br {
+      display: none;
+    }
+
+    @media (min-width: $width-tablet) {
+      width: 168px;
+    }
+
+    @media (min-width: $width-desktop) {
+      width: 215px;
+
+      br {
+        display: initial;
+      }
+    }
+  }
+
+  &--food {
+    margin-bottom: 37px;
+
+    @media (min-width: $width-tablet) {
+      margin-bottom: 0;
+      width: 155px;
+    }
+
+    @media (min-width: $width-desktop) {
+      width: 283px;
+    }
   }
 }

@@ -20,10 +20,17 @@
 @import "./blocks/button.scss";
 @import "./blocks/toogle-button.scss";
 @import "./blocks/page-form.scss";
+@import "./blocks/mask.scss";
 
 html,
 body {
   @include reset-indents;
   min-width: 320px;
   font-family: $font-family-primary;
+  background-color: $color-background-light;
+
+  @media (min-width: $width-desktop) {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
 }

@@ -1,8 +1,9 @@
 .definition__card {
-  padding: 43px 33px 30px 32px;
+  padding: 39px 30px 5px 30px;
+  background-color: $color-primary;
 
   @media (min-width: $width-tablet) {
-    padding: 51px 139px 55px 139px;
+    padding: 48px 137px 50px 135px;
   }
 
   @media (min-width: $width-desktop) {

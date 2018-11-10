@@ -3,16 +3,40 @@
   background-position: center;
   background-size: cover;
   text-align: center;
-  height: 158px;
   line-height: 158px;
+  position: relative;
 
   @media (min-width: $width-tablet) {
     background: url("../../img/bg-back-tablet@1x.jpg");
     background-position: center;
     background-size: cover;
-
-    height: 196px;
+    height: 290px;
   }
+
+  @media (min-width: $width-desktop) {
+    height: 301px;
+  }
+
+  &--form {
+    height: 158px;
+    line-height: normal;
+
+    @media (min-width: $width-tablet) {
+      height: 290px;
+    }
+
+    @media (min-width: $width-desktop) {
+      height: 301px;
+    }
+  }
+}
+
+.main__mask {
+  bottom: 0;
+}
+
+.main__slogan-photo {
+  margin-top: 50px;
 }
 
 .main__banner-photo {

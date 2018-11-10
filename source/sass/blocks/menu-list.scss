@@ -1,35 +1,57 @@
 .menu-list {
   @include reset-list;
+  display: flex;
+  flex-direction: column;
 
   @media (min-width: $width-tablet) {
-    display: flex;
     flex-direction: row;
     justify-content: space-between;
   }
 }
 
 .menu-list__item {
-  width: 100%;
-  display: table;
+  display: flex;
+  justify-content: center;
   background-color: $color-inverted;
-  box-shadow: 0 1px 0 0 rgba(1, 1, 1, 0.2),
-    inset 0 1px 0 0 rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid #678fa7;
 
   @media (min-width: $width-tablet) {
     width: 153px;
     box-shadow: none;
+    border-bottom: none;
+    background-color: initial;
   }
 
   @media (min-width: $width-desktop) {
     width: 239px;
   }
+
+  &:last-child {
+    box-shadow: 0 1px 0 0 rgba(1, 1, 1, 0.2),
+      inset 0 1px 0 0 rgba(255, 255, 255, 0.2);
+
+    @media (min-width: $width-tablet) {
+      box-shadow: none;
+    }
+  }
+
+  &--logo {
+    min-height: 56px;
+    position: relative;
+    order: 3;
+    background-color: $color-primary;
+    border: none;
+
+    @media (min-width: $width-tablet) {
+      order: initial;
+    }
+  }
 }
 
 .menu-list__link {
   @include text-style;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  display: table-cell;
+  padding-top: 8px;
+  padding-bottom: 8px;
   text-decoration: none;
   color: $color-primary;
   font-size: $font-size-medium;
@@ -41,19 +63,14 @@
     background-color: $color-primary;
     line-height: 1.86;
     font-size: $font-size-small;
-    padding-top: 18px;
-    padding-bottom: 18px;
+    padding-top: 14px;
+    padding-bottom: 14px;
   }
-}
 
-.menu-list__logo {
-  min-height: 56px;
-  position: relative;
-  order: 3;
-
-  @media (min-width: $width-tablet) {
-    order: initial;
-    width: 102px;
+  &--form {
+    @media (min-width: $width-tablet) {
+      margin-left: 4px;
+    }
   }
 }
 
@@ -64,6 +81,7 @@
 
 .menu-list__logo-image {
   position: absolute;
+  z-index: 10;
 }
 
 .menu-list__button {

@@ -13,6 +13,10 @@
 .social__icon {
   background-color: $color-inverted;
 
+  @media (min-width: $width-tablet) {
+    margin-left: 2px;
+  }
+
   &--tw {
     padding: 17px 14px;
   }
@@ -23,5 +27,9 @@
 
   &--yt {
     padding: 17px 13px;
+
+    @media (min-width: $width-tablet) {
+      padding-left: 14px;
+    }
   }
 }

@@ -1,11 +1,16 @@
+.review {
+  background-color: $color-primary;
+}
+
 .review__card {
-  padding: 41px 21px 22px 23px;
+  background-color: $color-primary;
+  padding: 38px 21px 20px 23px;
 
   @media (min-width: $width-tablet) {
-    padding: 71px 165px 84px 164px;
+    padding: 73px 165px 57px 164px;
   }
 
   @media (min-width: $width-desktop) {
-    padding: 108px 381px 69px 380px;
+    padding: 110px 381px 41px 380px;
   }
 }

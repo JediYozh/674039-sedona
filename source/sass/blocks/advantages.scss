@@ -1,68 +1,115 @@
 .advantages__list {
   @include reset-list;
+  background-color: $color-primary;
 }
 
 .advantages__item {
-  &--bridge {
-    @media (min-width: $width-tablet) {
-      display: flex;
-    }
-  }
-
-  &--wide {
-    @media (min-width: $width-tablet) {
-      display: flex;
-    }
+  @media (min-width: $width-tablet) {
+    display: flex;
+    justify-content: center;
   }
 
   &--group {
+    margin-top: -4px;
+    background-color: $color-background-secondary;
+
     @media (min-width: $width-tablet) {
-      display: flex;
+      margin-top: 0;
+    }
+
+    @media (min-width: $width-desktop) {
+      padding-bottom: 23px;
+    }
+  }
+
+  &--bridge {
+    @media (min-width: $width-desktop) {
+      max-height: 256px;
     }
   }
 }
 
 .advantages__card {
-  padding: 61px 27px 45px 28px;
+  padding: 77px 27px 40px 28px;
+  position: relative;
 
   @media (min-width: $width-tablet) {
     order: -1;
-    padding: 46px 47px 49px 47px;
-    flex-basis: 162px;
-    height: 161px;
+    padding: 45px 47px 42px 47px;
+    min-height: 161px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   @media (min-width: $width-desktop) {
-    flex-basis: 265px;
-    height: 140px;
-    padding: 53px 67px 63px 68px;
+    padding: 53px 67px 55px 68px;
+    min-height: auto;
   }
 
   &--bridge {
-    padding: 45px 31px 42px 30px;
+    padding: 40px 31px 38px 30px;
+    position: relative;
 
     @media (min-width: $width-tablet) {
       order: 1;
+      flex-basis: 162px;
+      padding: 45px 47px 25px 47px;
+    }
+
+    @media (min-width: $width-desktop) {
+      padding: 53px 92px 59px 93px;
     }
   }
 
   &--square {
-    padding: 33px 41px 32px 41px;
+    padding: 28px 41px 27px 41px;
+
+    @media (min-width: $width-tablet) {
+      padding: 44px 20px 27px 22px;
+    }
   }
 
   &--road {
-    padding: 33px 56px 32px 57px;
+    padding: 27px 56px 27px 57px;
+
+    @media (min-width: $width-tablet) {
+      padding-top: 44px;
+      padding-left: 45px;
+    }
+
+    @media (min-width: $width-desktop) {
+      margin-left: 25px;
+    }
   }
 
   &--tourists {
-    padding: 33px 37px 32px 37px;
+    padding: 27px 35px 27px 35px;
+    border-bottom: none;
+
+    @media (min-width: $width-tablet) {
+      padding-top: 44px;
+      padding-right: 50px;
+    }
+  }
+
+  &--first-reason {
+    @media (min-width: $width-tablet) {
+      flex-basis: 162px;
+      padding: 45px 47px 25px 47px;
+    }
+
+    @media (min-width: $width-desktop) {
+      padding: 53px 67px 55px 68px;
+    }
   }
 }
 
 .advantages__photo {
   @media (min-width: $width-tablet) {
-    height: 256px;
     width: 512px;
+    height: 256px;
+    flex-grow: 1;
   }
 
   @media (min-width: $width-desktop) {
