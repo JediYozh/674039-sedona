@@ -225,11 +225,3 @@
     }
   }
 }
-
-.card__mask {
-  top: 0;
-
-  @media (min-width: $width-tablet) {
-    display: none;
-  }
-}

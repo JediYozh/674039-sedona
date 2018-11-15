@@ -21,10 +21,10 @@
 @import "./blocks/toogle-button.scss";
 @import "./blocks/page-form.scss";
 @import "./blocks/mask.scss";
+@import "./normalize.scss";
 
 html,
 body {
-  @include reset-indents;
   min-width: 320px;
   font-family: $font-family-primary;
   background-color: $color-background-light;

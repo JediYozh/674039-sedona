@@ -12,7 +12,9 @@
       <nav class="main-nav">
         <button class="main-nav__button toggle-button" type="button"></button>
         <ul class="main-nav__list menu-list">
-          <li class="menu-list__item"><a class="menu-list__link">Главная</a></li>
+          <li class="menu-list__item">
+            <a class="menu-list__link">Главная</a>
+          </li>
           <li class="menu-list__item">
             <a class="menu-list__link" href="photo.html">Фото и видео</a>
           </li>
@@ -26,13 +28,20 @@
                 alt="City of Sedona"
               />
             </a>
-            <button class="menu-list__button toggle-button" type="button"></button>
+            <button
+              class="menu-list__button toggle-button"
+              type="button"
+            ></button>
           </li>
           <li class="menu-list__item">
-            <a class="menu-list__link menu-list__link--form" href="form.html">Форма отзыва</a>
+            <a class="menu-list__link menu-list__link--form" href="form.html"
+              >Форма отзыва</a
+            >
           </li>
           <li class="menu-list__item">
-            <a class="menu-list__link" href="https://htmlacademy.ru/intensive/adaptive"
+            <a
+              class="menu-list__link"
+              href="https://htmlacademy.ru/intensive/adaptive"
               >HTML Academy</a
             >
           </li>
@@ -41,7 +50,7 @@
     </header>
 
     <main class="main">
-      <section class="welcome">
+      <section class="welcome mask">
         <h1 class="visually-hidden">Добро пожаловать в Седону</h1>
         <img
           class="welcome__banner"
@@ -49,15 +58,7 @@
           width="281"
           height="214"
           alt="Because the Grand
-      Canyon sucks"
-        />
-        <img
-          class="welcome__mask mask"
-          src="img/bg-intro-triangle-mobile.svg"
-          width="320"
-          height="26"
-          alt="Because the Grand
-      Canyon sucks"
+          Canyon sucks"
         />
       </section>
 
@@ -76,16 +77,12 @@
         <h2 class="visually-hidden">Почему стоит посетить Седону</h2>
         <ul class="advantages__list">
           <li class="advantages__item">
-            <div class="advantages__card advantages__card--first-reason card card--inverted">
-              <img
-                class="card__mask mask"
-                src="img/bg-triangle.svg"
-                width="320"
-                height="37"
-                alt="Because the Grand
-                Canyon sucks"
-              />
-              <p class="card__title card__title--inverted card__title--advantage">
+            <div
+              class="advantages__card advantages__card--first-reason card card--mask card--inverted"
+            >
+              <p
+                class="card__title card__title--inverted card__title--advantage"
+              >
                 Настоящий<br />городок
               </p>
               <p class="card__number card__number--inverted">№1</p>
@@ -104,7 +101,9 @@
           <li class="advantages__item">
             <ul class="recommendations__list recommendations">
               <li class="recommendations__item recommendations__item--hosting">
-                <div class="recommendations__title-wrapper recommendations__title-wrapper--hosting">
+                <div
+                  class="recommendations__title-wrapper recommendations__title-wrapper--hosting"
+                >
                   <img
                     class="recommendations__icon recommendations__icon--hosting"
                     src="img/icon-house.svg"
@@ -118,7 +117,9 @@
                   Рекомендуем пожить в настоящем мотеле, все как в кино!
                 </p>
               </li>
-              <li class="recommendations__item recommendations__item--souvenirs">
+              <li
+                class="recommendations__item recommendations__item--souvenirs"
+              >
                 <div
                   class="recommendations__title-wrapper recommendations__title-wrapper--souvenirs"
                 >
@@ -129,15 +130,23 @@
                     height="38"
                     alt="Souvenirs"
                   />
-                  <h3 class="recommendations__title recommendations__title--souvenirs">Сувениры</h3>
+                  <h3
+                    class="recommendations__title recommendations__title--souvenirs"
+                  >
+                    Сувениры
+                  </h3>
                 </div>
-                <p class="recommendations__text recommendations__text--souvenirs">
+                <p
+                  class="recommendations__text recommendations__text--souvenirs"
+                >
                   Не только китайского,<br />
                   но и местного производства!
                 </p>
               </li>
               <li class="recommendations__item recommendations__item--food">
-                <div class="recommendations__title-wrapper recommendations__title-wrapper--food">
+                <div
+                  class="recommendations__title-wrapper recommendations__title-wrapper--food"
+                >
                   <img
                     class="recommendations__icon recommendations__icon--food"
                     src="img/icon-burger.svg"
@@ -157,7 +166,9 @@
             <div
               class="advantages__card advantages__card--inverted advantages__card--bridge card card--inverted"
             >
-              <p class="card__title card__title--inverted card__title--advantage">
+              <p
+                class="card__title card__title--inverted card__title--advantage"
+              >
                 Там есть<br />мост дьявола
               </p>
               <p class="card__number card__number--inverted">№2</p>
@@ -174,21 +185,29 @@
             />
           </li>
           <li class="advantages__item advantages__item--group">
-            <div class="advantages__card  advantages__card--square card card--secondary">
-              <p class="card__title card__title--advantage">Небольшая площадь</p>
+            <div
+              class="advantages__card  advantages__card--square card card--secondary"
+            >
+              <p class="card__title card__title--advantage">
+                Небольшая площадь
+              </p>
               <p class="card__number card__number--secondary">№3</p>
               <p class="card__text card__text--secondary card__text--square">
                 Все интересные места находятся очень близко
               </p>
             </div>
-            <div class="advantages__card advantages__card--road card card--secondary">
+            <div
+              class="advantages__card advantages__card--road card card--secondary"
+            >
               <p class="card__title card__title--advantage">Красивая дорога</p>
               <p class="card__number card__number--secondary">№4</p>
               <p class="card__text card__text--secondary card__text--road">
                 Ехать в Седону из Лас-Вегаса совсем не скучно!
               </p>
             </div>
-            <div class="advantages__card advantages__card--tourists card card--secondary">
+            <div
+              class="advantages__card advantages__card--tourists card card--secondary"
+            >
               <p class="card__title card__title--advantage">Мало туристов</p>
               <p class="card__number card__number--secondary">№5</p>
               <p class="card__text card__text--secondary card__text--tourist">
@@ -202,12 +221,16 @@
       <section class="hotel-search">
         <h2 class="visually-hidden">Поиск гостиницы</h2>
         <div class="hotel-search__card card">
-          <p class="card__title card__title--huge card__title--hotel">Заинтересовались?</p>
+          <p class="card__title card__title--huge card__title--hotel">
+            Заинтересовались?
+          </p>
           <p class="card__text card__text--hotel card__text--large">
             Укажите предполагаемые даты поездки,<br />
             и мы покажем вам лучшие предложения гостиниц в Седоне
           </p>
-          <a class="hotel-search__link button button--inverted" href="hotel-search.html"
+          <a
+            class="hotel-search__link button button--inverted"
+            href="hotel-search.html"
             >Найти гостиницу</a
           >
         </div>

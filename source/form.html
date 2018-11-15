@@ -12,7 +12,9 @@
       <nav class="main-nav">
         <button class="main-nav__button toggle-button" type="button"></button>
         <ul class="main-nav__list menu-list">
-          <li class="menu-list__item"><a class="menu-list__link" href="index.html">Главная</a></li>
+          <li class="menu-list__item">
+            <a class="menu-list__link" href="index.html">Главная</a>
+          </li>
           <li class="menu-list__item">
             <a class="menu-list__link" href="photo.html">Фото и видео</a>
           </li>
@@ -26,13 +28,18 @@
                 alt="City of Sedona"
               />
             </a>
-            <button class="menu-list__button toggle-button" type="button"></button>
+            <button
+              class="menu-list__button toggle-button"
+              type="button"
+            ></button>
           </li>
           <li class="menu-list__item">
             <a class="menu-list__link menu-list__link--form">Форма отзыва</a>
           </li>
           <li class="menu-list__item">
-            <a class="menu-list__link" href="https://htmlacademy.ru/intensive/adaptive"
+            <a
+              class="menu-list__link"
+              href="https://htmlacademy.ru/intensive/adaptive"
               >HTML Academy</a
             >
           </li>
@@ -41,7 +48,7 @@
     </header>
 
     <main class="main">
-      <section class="main__banner main__banner--form">
+      <section class="main__banner mask main__banner--form">
         <h1 class="visually-hidden">Sedona</h1>
         <img
           class="main__slogan-photo"
@@ -50,33 +57,40 @@
           height="40"
           alt="Sedona"
         />
-        <img
-          class="main__mask mask"
-          src="img/bg-intro-triangle-mobile.svg"
-          width="320"
-          height="26"
-          alt="Sedona"
-        />
       </section>
 
       <section class="review">
         <div class="review__card card">
-          <h2 class="card__title card__title--huge card__title--review">Оставьте свой отзыв</h2>
+          <h2 class="card__title card__title--huge card__title--review">
+            Оставьте свой отзыв
+          </h2>
           <p class="card__text card__text--large">
-            Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами
-            достопримечательностях
+            Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о
+            посещенных вами достопримечательностях
           </p>
         </div>
       </section>
 
       <section class="page-form">
         <h2 class="visually-hidden">Форма отзыва</h2>
-        <form class="page-form__review form" action="https://echo.htmlacademy.ru" method="post">
+        <form
+          class="page-form__review form"
+          action="https://echo.htmlacademy.ru"
+          method="post"
+        >
           <div class="form__item-wrapper">
             <div class="form__item form__item--naming">
-              <h2 class="form__item-title form__item-title--naming">Представьтесь:</h2>
-              <div class="form__group form__group--naming form__group--firstname">
-                <label class="form__label form__label--firstname" for="firstname">Имя*:</label>
+              <h2 class="form__item-title form__item-title--naming">
+                Представьтесь:
+              </h2>
+              <div
+                class="form__group form__group--naming form__group--firstname"
+              >
+                <label
+                  class="form__label form__label--firstname"
+                  for="firstname"
+                  >Имя*:</label
+                >
                 <input
                   class="form__field form__field--naming form__field--firstname"
                   type="text"
@@ -86,7 +100,9 @@
                 />
               </div>
               <div class="form__group form__group--naming">
-                <label class="form__label form__label--lastname" for="lastname">Фамилия*:</label>
+                <label class="form__label form__label--lastname" for="lastname"
+                  >Фамилия*:</label
+                >
                 <input
                   class="form__field form__field--naming"
                   type="text"
@@ -95,8 +111,12 @@
                   placeholder="Иванов"
                 />
               </div>
-              <div class="form__group form__group--naming form__group--patronymic">
-                <label class="form__label form__label--patronymic" for="patronymic"
+              <div
+                class="form__group form__group--naming form__group--patronymic"
+              >
+                <label
+                  class="form__label form__label--patronymic"
+                  for="patronymic"
                   >Отчество:</label
                 >
                 <input
@@ -115,7 +135,8 @@
               <div class="form__group-wrapper form__group-wrapper--contact">
                 <div class="form__group form__group--contact">
                   <label class="form__label form__label--contact" for="phone">
-                    <span class="form__hidden-label">Контактный </span>телефон*:</label
+                    <span class="form__hidden-label">Контактный </span
+                    >телефон*:</label
                   >
                   <input
                     class="form__field form__field--contact"
@@ -142,7 +163,9 @@
           </div>
           <div class="form__item-wrapper form__item-wrapper--feedback">
             <div class="form__item form__item--feedback">
-              <h2 class="form__item-title form__item-title--feedback">Ваше общее впечатление:</h2>
+              <h2 class="form__item-title form__item-title--feedback">
+                Ваше общее впечатление:
+              </h2>
               <div class="form__group form__group--radio">
                 <input
                   class="form__field form__field--radio"
@@ -191,7 +214,9 @@
                   id="bridge"
                   checked
                 />
-                <label class="form__label form__label--checkbox" for="bridge">Мост Дьявола</label>
+                <label class="form__label form__label--checkbox" for="bridge"
+                  >Мост Дьявола</label
+                >
               </div>
               <div class="form__group form__group--checkbox">
                 <input
@@ -201,7 +226,9 @@
                   id="mountain"
                   checked
                 />
-                <label class="form__label form__label--checkbox" for="mountain">Гора-Колокол</label>
+                <label class="form__label form__label--checkbox" for="mountain"
+                  >Гора-Колокол</label
+                >
               </div>
               <div class="form__group form__group--checkbox form__group--park">
                 <input
@@ -211,7 +238,9 @@
                   id="park"
                   checked
                 />
-                <label class="form__label form__label--checkbox" for="park">Слайд-парк</label>
+                <label class="form__label form__label--checkbox" for="park"
+                  >Слайд-парк</label
+                >
               </div>
               <div class="form__group form__group--checkbox ">
                 <input
@@ -220,13 +249,17 @@
                   name="sight"
                   id="rock"
                 />
-                <label class="form__label form__label--checkbox" for="rock">Красные скалы</label>
+                <label class="form__label form__label--checkbox" for="rock"
+                  >Красные скалы</label
+                >
               </div>
             </div>
           </div>
           <div class="form__item-wrapper form__item-wrapper--textarea">
             <div class="form__item">
-              <h2 class="form__item-title form__item-title--about">Опишите свои эмоции:</h2>
+              <h2 class="form__item-title form__item-title--about">
+                Опишите свои эмоции:
+              </h2>
               <div class="form__group form__group--about-area">
                 <textarea
                   class="form__field form__field--about-area"

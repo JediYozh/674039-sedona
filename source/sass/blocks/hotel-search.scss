@@ -27,12 +27,10 @@
 }
 
 .hotel-search__map {
+  width: 100%;
+  object-fit: cover;
+
   @media (min-width: $width-tablet) {
     height: 350px;
-    width: 768px;
-  }
-
-  @media (min-width: $width-desktop) {
-    width: 1200px;
   }
 }
