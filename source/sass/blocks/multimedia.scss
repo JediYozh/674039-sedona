@@ -140,15 +140,18 @@ figure {
 
   @media (min-width: $width-desktop) {
     position: absolute;
-    margin-top: -80px;
-    background-color: $color-dark;
-    opacity: 0.3;
+    background-color: $color-photo-info;
+    bottom: 0;
     color: $color-primary;
   }
 
   &--road {
     @media (min-width: $width-tablet) {
       background-color: $color-special-light;
+    }
+
+    @media (min-width: $width-desktop) {
+      background-color: $color-photo-info;
     }
   }
 }
